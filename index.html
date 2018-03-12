@@ -11,8 +11,9 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/home.css">
   <body>
+
     <!-- Navbar -->
-    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Logo</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -27,7 +28,7 @@
               </a>
             </li>
             <li class="nav-item links">
-              <a id="living" class="nav-link " href="views/espaciosala.html">Living Room</a>
+              <a id="living" class="nav-link" href="#spacetemplate">Living Room</a>
             </li>
             <li class="nav-item links">
               <a id="bedroom" class="nav-link " href="views/espaciorecamara.html">Bedroom</a>
@@ -56,6 +57,7 @@
         </div>
       </div>
     </nav>
+
     <!-- Termina Navbar -->
     <div id="homepage">
       <div class="container-fluid nopadding">
@@ -200,6 +202,7 @@
             </a>
           </div>
         </div>
+
         <!--Blog-->
         <div class="row nopadding mt-5 mb-5">
           <div class="col nopadding mt-3">
@@ -243,7 +246,7 @@
       </div>
     </div>
 
-    <div id="spacetemplate">
+    <div id="spacetemplate">  <!-- START TEMPLATE -->
 
       <!-- Comienza livingroom -->
       <div class="row nopadding">
@@ -259,7 +262,7 @@
                   <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                   <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner tales2">
+                <div id="firstCarrousel" class="carousel-inner tales2">
                   <div class="carousel-item active">
                     <img class="d-block w-100" id="firstCarImg " src="" alt="First slide">
                   </div>
@@ -342,7 +345,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>  <!-- END TEMPLATE -->
 
 
     <!-- Comienza footer -->
@@ -401,8 +404,9 @@
       crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
       crossorigin="anonymous"></script>
+      <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/datafurniture.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="js/data.js"></script>
     <script type="text/javascript" src="js/home.js"></script>
   </body>
 

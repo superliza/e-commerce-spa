@@ -1,5 +1,5 @@
 var dataPictures = {
-    'livingroom': {
+    'living': {
         'title': 'Living Room',
         'description': 'The living room is a space of social gathering, a place where all family members can come together and take part in a range of activities',
         'firstCarrousel': ["../assets/images/livin.jpg", "../assets/images/livin1.jpg", "../assets/images/livin2.jpg"],
@@ -22,5 +22,7 @@ var dataPictures = {
                 'content': 'A focal point anchors the living room and helps draw you into the space. A fireplace is a natural focal point, symbolizing hearth and home, but in most living spaces, the television is the true center of attention. To keep them from competing, pair them up. '
             }
         }
-    },
+
+    }
 };
+

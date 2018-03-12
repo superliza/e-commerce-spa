@@ -22,5 +22,7 @@ var dataPictures = {
                 'content': 'A focal point anchors the living room and helps draw you into the space. A fireplace is a natural focal point, symbolizing hearth and home, but in most living spaces, the television is the true center of attention. To keep them from competing, pair them up. '
             }
         }
+
     }
 };
+

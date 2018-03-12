@@ -1,5 +1,5 @@
 var dataPictures = {
-    'livingroom': {
+    'living': {
         'title': 'Living Room',
         'description': 'The living room is a space of social gathering, a place where all family members can come together and take part in a range of activities',
         'firstCarrousel': ["../assets/images/livin.jpg", "../assets/images/livin1.jpg", "../assets/images/livin2.jpg"],

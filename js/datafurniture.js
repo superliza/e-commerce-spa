@@ -1,4 +1,4 @@
-var dataPictures = {
+var dataFourniture = {
     'living': {
         'title': 'Living Room',
         'description': 'The living room is a space of social gathering, a place where all family members can come together and take part in a range of activities',

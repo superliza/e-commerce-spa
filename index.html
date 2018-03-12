@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="">
+  <title>e-commerce</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed|Allura|Italianno|Mr+Dafoe|Work+Sans" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/home.css">
+  <body>
+    <!-- Navbar -->
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav text-faded">
+            <li class="nav-item active">
+              <a id="home" class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item links">
+              <a id="living" class="nav-link " href="views/espaciosala.html">Living Room</a>
+            </li>
+            <li class="nav-item links">
+              <a id="bedroom" class="nav-link " href="views/espaciorecamara.html">Bedroom</a>
+            </li>
+            <li class="nav-item links">
+              <a id="dinning"class="nav-link " href="views/espaciocomedor.html">Dinning Room</a>
+            </li>
+            <li class="nav-item links">
+              <a id="outdoor"class="nav-link " href="views/espaciopatio.html">Outdoors</a>
+            </li>
+            <li class="nav-item links">
+              <a id="studio"class="nav-link " href="views/espacioestudio.html">Studio</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i id="cart" class="fas fa-shopping-cart"></i>
+                <span id="counter" class="badge badge-info">0</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="search" class="nav-link btn btn-success" href="views/search.html">Search</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid nopadding">
+      <!-- Carousel -->
+      <div class="row nopadding">
+        <div class="col nopadding">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner tales">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="assets/images/livingroom.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item tales">
+                <img class="d-block w-100" src="assets/images/outdoor.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item tales">
+                <img class="d-block w-100" src="assets/images/livingroom3.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div class="row nopadding">
+        <div class="col nopadding">
+          <div id="info-container" class="mt-5">
+            <h1 class="mt-2">About us</h1>
+            <p class="mt-2  m-2 p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories -->
+      <div class="row nopadding mb-5">
+        <div class="col nopadding mb-5">
+          <section id="categories" class="mt-2  p-4">
+            <h1>Categories</h1>
+            <!-- Pongo un break porque no puedo separar el título de las imágenes con margin :( -->
+            <br>
+            <div class="grid mt-2">
+              <div class="gridimg hovereffect" alt="" id="bed"><div class="border2 overlay mt-1 mb-1 "> <h2>Bedroom</h2></div></div>
+              <div class="gridimg hovereffect" id="din"><div class="border22 overlay mt-1 mb-1"><h2>Dinning Room</h2></div></div>
+              <div class="gridimg hovereffect" id="liv"><div class="border2  overlay mt-1 mb-1"><h2>Living Room</h2></div></div>
+              <div class="gridimg hovereffect" id="study"><div class="border2 overlay mt-1 mb-1"><h2>Studio</h2></div></div>
+              <div class="gridimg hovereffect" id="out"><div class="border2 overlay mt-1 mb-1"><h2>Outdoors</h2></div></div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Best Seller`s -->
+
+      <h1 class="text-center">Best Seller's</h1>
+      <h6 class="mt-2 text-center">Check this items, they're on fire!</h6>
+      <div class="container-fluid mt-5">
+        <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
+            <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                <div class="carousel-item col-md-4 active">
+                    <img class="img-fluid mx-auto d-block" src="assets/images/dinnerbuffete4a.jpg" alt="slide 1">
+                    <h2>Piziano Buffete</h2>
+                    <h5>$16,788 MXN</h5>
+                </div>
+                <div class="carousel-item col-md-4">
+                    <img class="img-fluid mx-auto d-block" src="assets/images/storage1a.jpg" alt="slide 2">
+                    <h2>Credenza</h2>
+                    <h5>$12,398 MXN</h5>
+                </div>
+                <div class="carousel-item col-md-4">
+                    <img class="img-fluid mx-auto d-block" src="assets/images/sbookcase1a.jpg" alt="slide 3">
+                    <h2>Chicago</h2>
+                    <h5>$7,495 MXN</h5>
+                </div>
+                <div class="carousel-item col-md-4">
+                    <img class="img-fluid mx-auto d-block" src="assets/images/outtable1a.jpg" alt="slide 4">
+                    <h2>Venezia</h2>
+                    <h5>$3,450 MXN</h5>
+                </div>
+                <div class="carousel-item col-md-4">
+                    <img class="img-fluid mx-auto d-block" src="assets/images/mesa3a.jpg" alt="slide 5">
+                    <h2>Estocolmo</h2>
+                    <h5>$6,238 MXN</h5>
+                </div>
+                <div class="carousel-item col-md-4">
+                    <img class="img-fluid mx-auto d-block" src="assets/images/outchair2a.jpg" alt="slide 6">
+                    <h2>Lima</h2>
+                    <h5>$4,321 MXN</h5>
+                </div>
+                <div class="carousel-item col-md-4">
+                    <img class="img-fluid mx-auto d-block" src="assets/images/dinner4a.jpg" alt="slide 7">
+                    <h2>Iroquesia</h2>
+                    <h5>$20,158 MXN</h5>
+                </div>
+                <div class="carousel-item col-md-4">
+                    <img class="img-fluid mx-auto d-block" src="assets/images/outsofa3a.jpg" alt="slide 7">
+                    <h2>Damasco</h2>
+                    <h5>8,456 MXN</h5>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+                <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+      <!--Blog-->
+      <div class="row nopadding mt-5 mb-5">
+        <div class="col nopadding mt-3">
+          <div class="blog-cont">
+            <h1 class="mb-3 text-center">Blog</h1>
+            <h5 class="text-center">Are you looking for ideas? Check out our blog entries!</h5>
+            <div class="row nopadding mt-5">
+              <div class="tips col">
+                <img class="card-img-top blog-img" src="assets/images/rug2b.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Learn how to make your bedroom look bigger</h5>
+                  <p class="card-text">If you have a small bedroom, you’re not alone – it’s one of the most common bedroom decorating issues. You have to remodel to add actual square footage, but luckily, there are decorating tricks to fool the eye into seeing your bedroom as larger than it actually is. </p>
+                  <a href="#" class="btn btn-primary button">Learn More</a>
+                </div>
+              </div>
+              <div class="tips col">
+                <img class="card-img-top blog-img" src="assets/images/lampara-3a.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Learn how  to choose lighting for a room</h5>
+                  <p class="card-text">Choosing the lighting fixtures for the house is one of the details you need to plan when decorating a new space. But the decision is not easy, not even if you're planning a simple makeover or renovation. But you have to be organized and to to take things one by one, room by room.</p>
+                  <a href="#" class="btn btn-primary button">Learn More</a>
+                </div>
+              </div>
+              <div class="tips col">
+                <img class="card-img-top blog-img" src="assets/images/square.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Check out how to give personality to your office </h5>
+                  <p class="card-text">Whether you're setting up a new office space or trying to breathe life into an existing office, we've come up with eight important things to consider.</p>
+                  <a href="#" class="btn btn-primary button">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comienza footer -->
+      <footer class="container-fluid footer">
+        <div class="row">
+          <div class="col text-center mt-2">
+            <img src="" alt="Logo" height="23">
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col footer ">
+            <span class="font-weight-bold d-block text-left mb-1 fs">FURNITURE</span>
+            <a href="#" class="d-block text-left mb-1 fs link">Living-Room</a>
+            <a href="css/views/houses.html" class="d-block text-left mb-1  fs link">Dinning-Room</a>
+            <a href="css/views/characters.html" class="d-block text-left mb-1  fs link">Studio</a>
+            <a href="css/views/shows.html" class="d-block text-left mb-1 fs link">Bedroom</a>
+            <a href="css/views/books.html" class="d-block text-left mb-1  fs link">Outdoor-Furniture</a>
+          </div>
+          <div class="col footer">
+            <span class="font-weight-bold d-block text-left mb-1 fs ">LEARN MORE!</span>
+            <a href="#" class="d-block text-left mb-1  fs link">About us</a>
+            <a href="#" class="d-block text-left mb-1 fs link">Contact</a>
+            <a href="#" class="d-block text-left mb-1 fs link">FAQ</a>
+            <a href="#" class="d-block text-left mb-1 fs link">Visit our blog!</a>
+          </div>
+          <div class="col footer">
+            <span class="font-weight-bold d-block text-left mb-1 fs">KEEP IN TOUCH</span>
+            <a href="https://twitter.com/" class="d-block text-left mb-1 link">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="https://www.facebook.com/" class="d-block text-left mb-1 link">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https://www.instagram.com/" class="d-block text-left mb-1 link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="row nopadding mt-2">
+          <h6 class="d-block mx-auto col-6 offset-3">Do you want to keep with the trends and be the first to know about our incredible offers?</h6>
+          <h5 class="col-6 offset-3"> Subscribe to our newsletter!</h5>
+        </div>
+        <div class="input-group mb-3 col-6 offset-3 mt-2">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2">@example.com</span>
+          </div>
+        </div>
+      </footer>
+      <!-- Termina Footer -->
+
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+      <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+      <script type="text/javascript" src="js/app.js"></script>
+      <script type="text/javascript" src="js/data.js"></script>
+      <script type="text/javascript" src="js/home.js"></script>
+  </body>
+
+</html>

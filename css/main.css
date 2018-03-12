@@ -4,6 +4,11 @@ body{
   font-family: 'Encode Sans Semi Condensed', sans-serif;
 }
 
+#logo{
+  height: 9vh;
+  width: 60%;
+}
+
 #nav{
   background-color: #ffffff;
   position: fixed;
@@ -75,15 +80,15 @@ body{
 
 footer{
   background-color: #828282;
-  color:#828282;
+  color:#000;
   font-family: 'Encode Sans Semi Condensed', sans-serif;
 }
 
 .link{
-  color: #fff;
+  color: #f3f3f3;
 }
 
 .link:hover{
-  color:#828282;
+  color: #000;
   text-decoration: none;
 }

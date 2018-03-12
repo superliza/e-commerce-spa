@@ -1,4 +1,4 @@
-var dataPictures = {
+var dataFourniture = {
     'livingroom': {
         'title': 'Living Room',
         'description': 'The living room is a space of social gathering, a place where all family members can come together and take part in a range of activities',
@@ -7,7 +7,7 @@ var dataPictures = {
         'tips': {
             'title': 'Basic tips to decorate your living room',
             'firstTip': {
-                "title": 'Arrange Furniture for Conversation',
+                'title': 'Arrange Furniture for Conversation',
                 'image': '../assets/images/fc.jpg',
                 'content': 'Living rooms are gathering spaces, so use furniture arrangement to promote conversation and interaction. Pull seating pieces away from the walls and arrange them to face each other.'
             },
@@ -20,6 +20,31 @@ var dataPictures = {
                 "title": 'Create a Focal Point',
                 'image': '"../assets/images/fp.jpg"',
                 'content': 'A focal point anchors the living room and helps draw you into the space. A fireplace is a natural focal point, symbolizing hearth and home, but in most living spaces, the television is the true center of attention. To keep them from competing, pair them up. '
+            }
+        },
+        'title': "Bedroom",
+        'description': "One-third of our lives is spent sleeping, an activity that often takes place in the bedroom. In addition to being a room for sleep, the bedroom also serves as a private sanctuary or retreat, a place to take refuge from the world outside",
+        'firstCarrousel': ["../assets/images/bd1.jpg", "../assets/images/bd2.jpg", "../assets/images/bd3.jpg"],
+        'suggestedColorPalletes': ["../assets/images/cp1.png", "../assets/images/cp2.png", "../assets/images/cp3.png"],
+        'tips': {
+            'title': "Basic tips to decorate your bedroom",
+            'firstTip': {
+                'title': "A comforting pallete",
+                'image': "../assets/images/tb2.jpg",
+                'content': "You want everything in your bedroom to exude comfort, and the color palette is no exception. Whether you're a fan of warm or cool shades, pick colors that you naturally gravitate toward and give you a sense of calm.",
+                'button': "See more"
+            },
+            'secondTip': {
+                'title': "Keep Scale in Mind",
+                'image': "../assets/images/tb1.jpg",
+                'content': "Gauge the size of your bedside lamp by the scale of your bed: A four-poster would call for a big fixture; for a low bed, choose something smaller.",
+                'button': "Learn more"
+            },
+            'thirdTip': {
+                'title': "A variety of textures",
+                'image': "../assets/images/tb3.jpg",
+                'content': "Of course your bedding is plush as could be, but don't forget texture throughout the rest of your room. It adds dimension to a room and can give a small space some much-needed design character.",
+                'button': "Learn More"
             }
         }
     }

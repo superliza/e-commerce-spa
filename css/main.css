@@ -1,17 +1,23 @@
 body{
-  background: #fcfaf9;
-  color: #436269;
+  background: #f3f3f3;
+  color: #828282;
   font-family: 'Encode Sans Semi Condensed', sans-serif;
 }
 
+#logo{
+  height: 9vh;
+  width: 60%;
+}
+
 #nav{
+  background-color: #ffffff;
   position: fixed;
   width: 100%;
   z-index: 999;
 }
 
 #home{
-  color: #0aac9a;
+  color: #828282;
 }
 
 #checking{
@@ -22,24 +28,24 @@ body{
 
 #carrt-cont{
   font-size: 200%;
-  color: #0aac9a;
+  color:#828282;
   position:fixed;
 }
 
 #search{
-  background-color: #0aac9a;
-  border:#0aac9a;
+  background-color: #828282;
+  border:#828282;
   color: #fff;
 }
 
 #cart{
   font-size: 150%;
-  color: #0aac9a;
+  color:#828282;
 }
 
 .button{
-  background-color: #0aac9a;
-  border:#0aac9a;
+  background-color: #828282;
+  border:#828282;
   color: #fff;
 }
 
@@ -65,7 +71,7 @@ body{
 }
 
 .icons:hover{
-  color: #0aac9a;
+  color:#828282;
 }
 
 .navbar-nav{
@@ -73,16 +79,16 @@ body{
 }
 
 footer{
-  background-color: #436269;
-  color:#0aac9a;
+  background-color: #828282;
+  color:#000;
   font-family: 'Encode Sans Semi Condensed', sans-serif;
 }
 
 .link{
-  color: #fff;
+  color: #f3f3f3;
 }
 
 .link:hover{
-  color:#0aac9a;
+  color: #000;
   text-decoration: none;
 }

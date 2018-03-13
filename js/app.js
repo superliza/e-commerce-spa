@@ -10,13 +10,11 @@ let productPage = document.getElementById('product')
 
 
 
-
-
 function getData(eventTrigger) {
   event.preventDefault();
   homePage.classList.add('d-none')
   container.classList.remove('d-none');
-  let sectionSearch = eventTrigger.id;
+  let sectionSearch = eventTrigger.name;
   let section = dataFourniture[sectionSearch];
   let sectionTitle = section.title;
   console.log(sectionTitle);

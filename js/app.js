@@ -37,6 +37,7 @@ function getData(eventTrigger) {
   let firstSectionColorPallete = sectionColorPallete[0];
   $('#firstPallete').attr('src', firstSectionColorPallete);
   let secondSectionColorPallete = sectionColorPallete[1];
+  console.log()
   $('#secondPallete').attr('src', secondSectionColorPallete);
   let thirdSectionColorPallete = sectionColorPallete[2];
   $('#thirdPallete').attr('src', thirdSectionColorPallete);

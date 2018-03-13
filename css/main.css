@@ -4,16 +4,16 @@ body{
   font-family: 'Encode Sans Semi Condensed', sans-serif;
 }
 
-#logo{
-  height: 9vh;
-  width: 60%;
-}
-
 #nav{
   background-color: #ffffff;
   position: fixed;
   width: 100%;
   z-index: 999;
+}
+
+#logo{
+  height: 10vh;
+  width: 40%;
 }
 
 #home{
@@ -89,6 +89,6 @@ footer{
 }
 
 .link:hover{
-  color: #000;
+  color: #fb5200;
   text-decoration: none;
 }

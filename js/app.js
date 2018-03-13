@@ -5,7 +5,17 @@ const container = document.getElementById('spacetemplate');
 let title = document.getElementById('title');
 let description = document.getElementById('description');
 let homePage = document.getElementById('homepage');
+let productPage = document.getElementById('product')
 //let firstCarrousel = document.getElementById('title');
+
+
+function getProduct(eventTrigger) {
+  event.preventDefault();
+  homePage.classList.toggle('d-none');
+  container.classList.toggle('d-none');
+  productPage.classList.toggle('d-none');
+
+}
 
 
 function getData(eventTrigger) {
@@ -133,7 +143,7 @@ function createFurnitureSection(spaceObject, sectionSearch) {
     console.log("secorrióunavez")
     let template = `
   <div class="col furniturecontainer">
-      <img src=${setImages2} data-img2=${setImages3} data-img3=${setImages4} class="furniture" alt="">
+      <img src=${setImages2} data-img2=${setImages3} data-img3=${setImages4} class="furniture" alt="" onclick="getProduct(this)">
       <h5>${productName}</h5>
       <span>${productPrice}</span>
     </div>

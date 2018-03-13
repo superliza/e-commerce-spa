@@ -9,6 +9,7 @@ let homePage = document.getElementById('homepage');
 
 
 function getData(eventTrigger) {
+  event.preventDefault();
   homePage.classList.toggle('d-none');
   container.classList.toggle('d-none');
   let sectionSearch = eventTrigger.id;
@@ -87,8 +88,8 @@ function createFurnitureSection(spaceObject, sectionSearch) {
   $.each(spaceObject, function (objectKey) {
     let url = spaceObject[objectKey];
     let spaceName = objectKey;
-    // console.log(url);
-    // console.log(spaceName);
+    console.log(url);
+    console.log(spaceName);
     let furnitureTitle = $("<h3></h3>").text(spaceName);
     let furniturecontainer = $("<div></div>");
     furniturecontainer.attr({
@@ -99,14 +100,17 @@ function createFurnitureSection(spaceObject, sectionSearch) {
     getDataFetch(url, spaceName, sectionSearch);
   })
 
-  function getDataFetch(url, spaceName) {
+  function getDataFetch(url, spaceName,sectionSearch ) {
     fetch(url)
       .then(function (response) {
         response.json().then(function (data) {
           console.log(data);
           let newObject = {};
           data.items.forEach(function (value, i) {
+            console.log(sectionSearch);
+            console.log(spaceName);
             const route = dataPictures[sectionSearch][spaceName];
+            console.log(route);
             // console.log(value, i)
             let productName = value.name;
             let productPrice = value.salePrice;
@@ -135,8 +139,6 @@ function createFurnitureSection(spaceObject, sectionSearch) {
     </div>
 </div>`;
     const spaceContainer = document.getElementById(spaceName)
-    var newDiv = document.createElement("div");
-    newDiv.innerHTML = template;
-    spaceContainer.append(newDiv);
+    spaceContainer.insertAdjacentHTML('beforeend', template);
   }
 }

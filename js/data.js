@@ -1,5 +1,5 @@
 var dataPictures = {
-    'livingroom': {
+    'living': {
         'sofa': {
             '1': ["assets/images/sofa1a.jpg", "assets/images/sofa1b.jpg", "assets/images/sofa1c.jpg", "assets/images/sofa1d.jpg", "assets/images/sofa1e.jpg"],
             '2': ["assets/images/sofa2a.jpg", "assets/images/sofa2b.jpg", "assets/images/sofa2c.jpg", "assets/images/sofa2d.jpg", "assets/images/sofa2e.jpg"],
@@ -41,7 +41,7 @@ var dataPictures = {
             '4': ["assets/images/console4a.jpg", "assets/images/console4b.jpg", "assets/images/console4c.jpg"],
         },
     },
-    'dinnerRoom': {
+    'dinning': {
         'dinnertable': {
             '1': ["assets/images/dinner1a.jpg", "assets/images/dinner1b.jpg", "assets/images/dinner1c.jpg"],
             '2': ["assets/images/dinner2a.jpg", "assets/images/dinner2b.jpg", "assets/images/dinner2c.jpg"],
@@ -92,6 +92,7 @@ var dataPictures = {
             '1': ["assets/images/cajon1a.jpg", "assets/images/cajon1b.jpg", "assets/images/cajon1c.jpg", "assets/images/cajon1d.jpg"],
         },
         'dresser': {
+
             '1': ["assets/images/dresser6a.jpg", "assets/images/dresser6b.jpg", "assets/images/dresser6c.jpg"],
             '2': ["assets/images/draw-dresser-a.jpg", "assets/images/draw-dresser-b.jpg", "assets/images/draw-dresser-c.jpg", "assets/images/draw-dresser-d.jpg"],
         },
@@ -109,7 +110,7 @@ var dataPictures = {
             '5': ["assets/images/storage5a.jpg", "assets/images/storage5b.jpg", "assets/images/storage5c.jpg"],
         }
     },
-    'study': {
+    'studio': {
         'desk': {
             '1': ["assets/images/desk1a.jpg", "assets/images/desk1b.jpg", "assets/images/desk1c.jpg"],
             '2': ["assets/images/desk2a.jpg", "assets/images/desk2b.jpg", "assets/images/desk2c.jpg"],

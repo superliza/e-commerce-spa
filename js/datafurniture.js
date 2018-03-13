@@ -28,7 +28,7 @@ const dataFourniture = {
     'bedroom': {
         'title': 'Bedroom',
         'description': 'One-third of our lives is spent sleeping, an activity that often takes place in the bedroom. In addition to being a room for sleep, the bedroom also serves as a private sanctuary or retreat, a place to take refuge from the world outside',
-        'firstCarrousel': ["assets/images/bd1.jpg", "assets/images/bd2.jpg", "assets/images/bd3.jpg.jpg"],
+        'firstCarrousel': ["assets/images/bd1.jpg", "assets/images/bd2.jpg", "assets/images/bd3.jpg"],
         'suggestedColorPalletes': ["assets/images/cp1.png", "assets/images/cp2.png", "assets/images/cp3.png"],
         'tips': {
             'title': 'Basic tips to decorate your Bedroom',

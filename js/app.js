@@ -11,17 +11,17 @@ let productPage = document.getElementById('product')
 
 function getProduct(eventTrigger) {
   event.preventDefault();
-  homePage.classList.toggle('d-none');
-  container.classList.toggle('d-none');
-  productPage.classList.toggle('d-none');
+  container.classList.add('d-none');
+  homePage.classList.add('d-none');
+  productPage.classList.remove('d-none');
 
 }
 
 
 function getData(eventTrigger) {
   event.preventDefault();
-  homePage.classList.toggle('d-none');
-  container.classList.toggle('d-none');
+  homePage.classList.add('d-none')
+  container.classList.remove('d-none');
   let sectionSearch = eventTrigger.id;
   let section = dataFourniture[sectionSearch];
   let sectionTitle = section.title;

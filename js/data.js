@@ -92,7 +92,6 @@ var dataPictures = {
             '1': ["assets/images/cajon1a.jpg", "assets/images/cajon1b.jpg", "assets/images/cajon1c.jpg", "assets/images/cajon1d.jpg"],
         },
         'dresser': {
-
             '1': ["assets/images/dresser6a.jpg", "assets/images/dresser6b.jpg", "assets/images/dresser6c.jpg"],
             '2': ["assets/images/draw-dresser-a.jpg", "assets/images/draw-dresser-b.jpg", "assets/images/draw-dresser-c.jpg", "assets/images/draw-dresser-d.jpg"],
         },

@@ -1,16 +1,16 @@
 var dataPictures = {
     'livingroom': {
         'sofa': {
-            '1': ["../assets/images/sofa1a.jpg", "../assets/images/sofa1b.jpg", "../assets/images/sofa1c.jpg", "../assets/images/sofa1d.jpg", "../assets/images/sofa1e.jpg"],
-            '2': ["../assets/images/sofa2a.jpg", "../assets/images/sofa2b.jpg", "../assets/images/sofa2c.jpg", "../assets/images/sofa2d.jpg", "../assets/images/sofa2e.jpg"],
-            '3': ["../assets/images/sofa3a.jpg", "../assets/images/sofa3b.jpg", "../assets/images/sofa3c.jpg", "../assets/images/sofa3d.jpg"],
-            '4': ["../assets/images/sofa4a.jpg", "../assets/images/sofa4b.jpg", "../assets/images/sofa4c.jpg", "../assets/images/sofa4d.jpg"],
-            '5': ["../assets/images/sofa5a.jpg", "../assets/images/sofa5b.jpg", "../assets/images/sofa5c.jpg", "../assets/images/sofa5d.jpg"],
-            '6': ["../assets/images/sofa6a.jpg", "../assets/images/sofa6b.jpg", "../assets/images/sofa6c.jpg"],
-            '7': ["../assets/images/sofa7a.jpg", "../assets/images/sofa7b.jpg", "../assets/images/sofa7c.jpg"],
-            '8': ["../assets/images/sofa8a.jpg", "../assets/images/sofa8b.jpg", "../assets/images/sofa8c.jpg"],
-            '9': ["../assets/images/sofa9a.jpg", "../assets/images/sofa9b.jpg", "../assets/images/sofa9c.jpg"],
-            '10': ["../assets/images/sofa10a.jpg", "../assets/images/sofa10b.jpg", "../assets/images/sofa10c.jpg", ],
+            '1': ["assets/images/sofa1a.jpg", "assets/images/sofa1b.jpg", "assets/images/sofa1c.jpg", "../assets/images/sofa1d.jpg", "../assets/images/sofa1e.jpg"],
+            '2': ["assets/images/sofa2a.jpg", "assets/images/sofa2b.jpg", "assets/images/sofa2c.jpg", "../assets/images/sofa2d.jpg", "../assets/images/sofa2e.jpg"],
+            '3': ["assets/images/sofa3a.jpg", "assets/images/sofa3b.jpg", "assets/images/sofa3c.jpg", "../assets/images/sofa3d.jpg"],
+            '4': ["assets/images/sofa4a.jpg", "assets/images/sofa4b.jpg", "assets/images/sofa4c.jpg", "../assets/images/sofa4d.jpg"],
+            '5': ["assets/images/sofa5a.jpg", "assets/images/sofa5b.jpg", "assets/images/sofa5c.jpg", "../assets/images/sofa5d.jpg"],
+            '6': ["assets/images/sofa6a.jpg", "assets/images/sofa6b.jpg", "assets/images/sofa6c.jpg"],
+            '7': ["assets/images/sofa7a.jpg", "assets/images/sofa7b.jpg", "../assets/images/sofa7c.jpg"],
+            '8': ["../assets/images/sofa8a.jpg", "assets/images/sofa8b.jpg", "assets/images/sofa8c.jpg"],
+            '9': ["assets/images/sofa9a.jpg", "assets/images/sofa9b.jpg", "assets/images/sofa9c.jpg"],
+            '10': ["assets/images/sofa10a.jpg", "assets/images/sofa10b.jpg", "assets/images/sofa10c.jpg", ],
         },
         'coffetable': {
             '1': ["../assets/images/coffe1a.jpg", "../assets/images/coffe1b.jpg", "../assets/images/coffe1c.jpg"],

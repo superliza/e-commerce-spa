@@ -147,7 +147,7 @@ function createFurnitureSection(spaceObject, sectionSearch) {
       <h5>${productName}</h5>
       <span>${productPrice}</span>
       <button class = "button" onclick="getCar(this)">Agregar al carrito</button>
-</div>`;
+  </div>`;
     const spaceContainer = document.getElementById(spaceName)
     spaceContainer.insertAdjacentHTML('beforeend', template);
   }

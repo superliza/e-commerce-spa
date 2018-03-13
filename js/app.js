@@ -9,13 +9,7 @@ let productPage = document.getElementById('product')
 //let firstCarrousel = document.getElementById('title');
 
 
-function getProduct(eventTrigger) {
-  event.preventDefault();
-  container.classList.add('d-none');
-  homePage.classList.add('d-none');
-  productPage.classList.remove('d-none');
 
-}
 
 
 function getData(eventTrigger) {
@@ -110,7 +104,7 @@ function createFurnitureSection(spaceObject, sectionSearch) {
     getDataFetch(url, spaceName, sectionSearch);
   })
 
-  function getDataFetch(url, spaceName,sectionSearch ) {
+  function getDataFetch(url, spaceName, sectionSearch) {
     fetch(url)
       .then(function (response) {
         response.json().then(function (data) {
@@ -140,12 +134,14 @@ function createFurnitureSection(spaceObject, sectionSearch) {
 
 
   function printProduct(productName, productPrice, productDescription, setImages2, setImages3, setImages4, spaceName) {
+    // $('#furniturecontainer').innerHTML("");
     console.log("secorrióunavez")
     let template = `
   <div class="col furniturecontainer">
-      <img src=${setImages2} data-img2=${setImages3} data-img3=${setImages4} class="furniture" alt="" onclick="getProduct(this)">
+      <img src=${setImages2} data-img2=${setImages3} data-img3=${setImages4} data-name=${productName}  data-price=${productPrice} data-description=${productDescription} class="furniture" alt="" onclick="getProduct(this)">
       <h5>${productName}</h5>
       <span>${productPrice}</span>
+      <button>Agregar al carrito</button>
     </div>
 </div>`;
     const spaceContainer = document.getElementById(spaceName)

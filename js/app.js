@@ -9,12 +9,12 @@ let productPage = document.getElementById('product')
 //let firstCarrousel = document.getElementById('title');
 
 
-
 function getData(eventTrigger) {
   event.preventDefault();
   homePage.classList.add('d-none')
   container.classList.remove('d-none');
   let sectionSearch = eventTrigger.name;
+  console.log(sectionSearch);
   let section = dataFourniture[sectionSearch];
   let sectionTitle = section.title;
   console.log(sectionTitle);
@@ -133,8 +133,6 @@ function createFurnitureSection(spaceObject, sectionSearch) {
         })
       })
   }
-
-
 
   function printProduct(productName, productPrice, productDescription, setImages2, setImages3, setImages4, spaceName) {
 //console.log($('#furniturecontainer'));

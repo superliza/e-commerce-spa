@@ -10,7 +10,6 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/home.css">
-
   <body>
 
     <!-- Navbar -->
@@ -30,19 +29,19 @@
               </a>
             </li>
             <li class="nav-item links">
-              <a id="living" class="nav-link" href="#spacetemplate" onclick="getData(this)">Living Room</a>
+              <a id="living" name="living" class="nav-link" href="#spacetemplate" onclick="getData(this)">Living Room</a>
             </li>
             <li class="nav-item links">
-              <a id="bedroom" class="nav-link " onclick="getData(this)" href="#spacetemplate">Bedroom</a>
+              <a id="bedroom" name="bedroom" class="nav-link " onclick="getData(this)" href="#spacetemplate">Bedroom</a>
             </li>
             <li class="nav-item links">
-              <a id="dinning" class="nav-link " onclick="getData(this)" href="#spacetemplate">Dinning Room</a>
+              <a id="dinning" name="dinning" class="nav-link " onclick="getData(this)" href="#spacetemplate">Dinning Room</a>
             </li>
             <li class="nav-item links">
-              <a id="outdoor" class="nav-link " onclick="getData(this)" href="#spacetemplate">Outdoors</a>
+              <a id="outdoor" name="outdoor" class="nav-link " onclick="getData(this)" href="#spacetemplate">Outdoors</a>
             </li>
             <li class="nav-item links">
-              <a id="studio" class="nav-link " onclick="getData(this)" href="#spacetemplate">Studio</a>
+              <a id="studio" name="studio" class="nav-link " onclick="getData(this)" href="#spacetemplate">Studio</a>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
@@ -60,6 +59,7 @@
       </div>
     </nav>
     <!-- Termina Navbar -->
+
     <div id="homepage">
       <div class="container-fluid nopadding">
         <!-- Carousel -->
@@ -104,6 +104,7 @@
             </div>
           </div>
         </div>
+        <!-- Termina Carousel -->
 
         <!-- Categories -->
         <div class="row nopadding mb-5">
@@ -113,27 +114,27 @@
               <!-- Pongo un break porque no puedo separar el título de las imágenes con margin :( -->
               <br>
               <div class="grid mt-2">
-                <div onclick="getData(this)" class="gridimg hovereffect" alt="" id="bed2">
+                <div onclick="getData(this)" class="gridimg hovereffect" name="bedroom"  id="bed2">
                   <div class="border2 overlay mt-1 mb-1 ">
                     <h2>Bedroom</h2>
                   </div>
                 </div>
-                <div onclick="getData(this)" class="gridimg hovereffect" id="din">
+                <div onclick="getData(this)" class="gridimg hovereffect" name="dinning" id="din">
                   <div class="border22 overlay mt-1 mb-1">
                     <h2>Dinning Room</h2>
                   </div>
                 </div>
-                <div onclick="getData(this)" class="gridimg hovereffect" id="liv">
+                <div onclick="getData(this)" class="gridimg hovereffect" name="living" id="liv">
                   <div class="border2  overlay mt-1 mb-1">
                     <h2>Living Room</h2>
                   </div>
                 </div>
-                <div onclick="getData(this)" class="gridimg hovereffect" id="study">
+                <div onclick="getData(this)" class="gridimg hovereffect" name="studio" id="study">
                   <div class="border2 overlay mt-1 mb-1">
                     <h2>Studio</h2>
                   </div>
                 </div>
-                <div onclick="getData(this)" class="gridimg hovereffect" id="out">
+                <div onclick="getData(this)" class="gridimg hovereffect" name="outdoor" id="out">
                   <div class="border2 overlay mt-1 mb-1">
                     <h2>Outdoors</h2>
                   </div>
@@ -142,6 +143,7 @@
             </section>
           </div>
         </div>
+        <!-- Termina Categories -->
 
         <!-- Best Seller`s -->
 
@@ -201,6 +203,7 @@
             </a>
           </div>
         </div>
+        <!-- Termina Best Seller`s -->
 
         <!--Blog-->
         <div class="row nopadding mt-5 mb-5">
@@ -241,6 +244,7 @@
         </div>
       </div>
     </div>
+    <!--Termina-->
 
     <div id="spacetemplate" class="d-none">
       <!-- START TEMPLATE -->
@@ -287,7 +291,7 @@
           </div>
         </div>
       </div>
-      <!-- END Tmplate  -->
+      <!-- END Template  -->
 
       <!-- Paletas de colores  -->
 
@@ -298,16 +302,14 @@
         <img id="thirdPallete" src="" alt="">
       </div>
 
-
-
       <!-- Comienza sección furniture -->
       <div class="container-fluid">
         <h1>Furniture</h1>
         <div id="furniturecontainer" class="">
 
         </div>
-
       </div>
+
       <!--Tips-->
       <div class="row nopadding mt-5 mb-5">
         <div class="col nopadding mt-3">
@@ -346,21 +348,12 @@
       <!-- Comienza sección furniture -->
       <div class="container-fluid" id="furniturecontainer">
         <h1>Furniture</h1>
-
       </div>
     </div>  <!-- END TEMPLATE -->
 
 
-<!-- Comienza productos especifico-->
-<div class="container d-none" id="product" >
-
-</div>
-
-
-
-
     <!-- Comienza productos especifico-->
-    <div class="container d-none" id="product">
+    <div class="container d-none" id="product" >
 
     </div>
 

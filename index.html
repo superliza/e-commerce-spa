@@ -61,60 +61,6 @@
     </nav>
     <!-- Termina Navbar -->
 
-    <!-- Empieza modal -->
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Product</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col">
-                  <h5> IMAGE </h5>
-                </div>
-                <div class="col">
-                  <h5> PRODUCT </h5>
-                </div>
-                <div class="col">
-                  <h5> TYPE </h5>
-                </div>
-                <div class="col">
-                  <h5> PRICE </h5>
-                </div>
-                <div class="col">
-                  <h5> TOTAL </h5>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <img class="img-fluid" src="assets/images/livingroom.jpg" alt="image">
-                </div>
-                <div class="col">
-                  <p> Living room </p>
-                </div>
-                <div class="col">
-                  <p> sofa </p>
-                </div>
-                <div class="col">
-                  <p> $17000 MXN </p>
-                </div>
-                <div class="col">
-                  <p> $17000 MXN </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button id="save"type="button" class="btn button btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div id="homepage">
       <div class="container-fluid nopadding">
@@ -171,27 +117,27 @@
               <!-- Pongo un break porque no puedo separar el título de las imágenes con margin :( -->
               <br>
               <div class="grid mt-2">
-                <div class="gridimg hovereffect" alt="" id="bed2">
+                <div onclick="getData(this)" class="gridimg hovereffect" alt="" id="bed2">
                   <div class="border2 overlay mt-1 mb-1 ">
                     <h2>Bedroom</h2>
                   </div>
                 </div>
-                <div class="gridimg hovereffect" id="din">
+                <div onclick="getData(this)" class="gridimg hovereffect" id="din">
                   <div class="border22 overlay mt-1 mb-1">
                     <h2>Dinning Room</h2>
                   </div>
                 </div>
-                <div class="gridimg hovereffect" id="liv">
+                <div onclick="getData(this)" class="gridimg hovereffect" id="liv">
                   <div class="border2  overlay mt-1 mb-1">
                     <h2>Living Room</h2>
                   </div>
                 </div>
-                <div class="gridimg hovereffect" id="study">
+                <div onclick="getData(this)" class="gridimg hovereffect" id="study">
                   <div class="border2 overlay mt-1 mb-1">
                     <h2>Studio</h2>
                   </div>
                 </div>
-                <div class="gridimg hovereffect" id="out">
+                <div onclick="getData(this)" class="gridimg hovereffect" id="out">
                   <div class="border2 overlay mt-1 mb-1">
                     <h2>Outdoors</h2>
                   </div>

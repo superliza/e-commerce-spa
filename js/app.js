@@ -8,10 +8,6 @@ let homePage = document.getElementById('homepage');
 let productPage = document.getElementById('product')
 //let firstCarrousel = document.getElementById('title');
 
-
-
-
-
 function getData(eventTrigger) {
   event.preventDefault();
   homePage.classList.add('d-none');
@@ -137,8 +133,6 @@ function createFurnitureSection(spaceObject, sectionSearch) {
         })
       })
   }
-
-
 
   function printProduct(productName, productPrice, productDescription, setImages2, setImages3, setImages4, spaceName) {
 //console.log($('#furniturecontainer'));

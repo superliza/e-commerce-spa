@@ -1,17 +1,45 @@
 let arrayProducts = [];
 function getCart(eventT) {
     // console.log(eventT.dataset);
+    let myId = new Date().getTime();
+    
     let price = eventT.dataset.price;
     let name = eventT.dataset.name;
     let image = eventT.dataset.img;
     let obj = {"name": name, "price": price, "imagen": image};
-    arrayProducts.push(obj);
-    // console.log(array);
+    arrayProducts.push(myId, obj);
+    console.log(arrayProducts);
     
+    // let theClick = eventT.classList.toggle("click");
+    // console.log(hol);
+    addClass(eventT, arrayProducts);
     
+}
+
+function increaseCounter() {
     let counter = document.getElementById("counter");
     counter.innerHTML++;
-    // removeFromCart(arrayProducts);
+}
+
+function addClass(eventT, arrayProducts) {
+    // console.log(arrayProducts);
+    
+    let theClick = eventT.classList.toggle("click");
+    if (theClick === true) {
+        eventT.innerHTML = "Quitar del carrito"
+        
+        increaseCounter();
+    } else {
+        eventT.innerHTML = "Agregar al carrito"
+        removeFromCart(eventT, arrayProducts);
+        decreaseCounter();
+        
+    }
+}
+
+function decreaseCounter() {
+    let counter = document.getElementById("counter");
+    counter.innerHTML--;
 }
 
 
@@ -34,14 +62,20 @@ function getCart(eventT) {
 //     console.log(cartProducts);
 //   }
 // }
-// function removeFromCart(arrayProducts) {
-//     console.log(arrayProducts);
+function removeFromCart(eventT, arrayProducts) {
+    arrayProducts.forEach(element => {
+        let dataImage = element.imagen;
+        console.log(dataImage);
+        
+    })
+    
+    return arrayProducts;
     
 //     arrayProducts = arrayProducts.filter(function(element){
 //     return  element.id !== productId
 //     console.log(newArray);
 //   });
-// }
+}
 // function increaseCounter() {
 //   let counter = parseInt(document.getElementById("counterItems").textContent);
 //   let counter2 = document.getElementById("counterItems");

@@ -71,13 +71,13 @@ function selectObject(sectionSearch) {
 
 //Función que itera en muebles para hacer fetch por cada endpoint
 function createFurnitureSection(spaceObject) {
-  console.log(spaceObject);
+  // console.log(spaceObject);
   
   $.each(spaceObject, function (objectKey) {
     let url = spaceObject[objectKey];
     let spaceName = objectKey;
-    console.log(url);
-    console.log(spaceName);
+    // console.log(url);
+    // console.log(spaceName);
     let furnitureTitle = $("<h3></h3>").text(spaceName);
     let furniturecontainer =  $("<div></div>");
     furniturecontainer.attr({
@@ -85,7 +85,7 @@ function createFurnitureSection(spaceObject) {
   });
     $('#furniturecontainer').append(furnitureTitle);
     $('#furniturecontainer').append(furniturecontainer);
-    // getDataFetch(url, spaceName);
+    getDataFetch(url, spaceName);
 })
 
 function getDataFetch(url, spaceName) {
@@ -105,8 +105,8 @@ function getDataFetch(url, spaceName) {
                   let setImages2 = setImages[0];
                   let setImages3 = setImages[1];
                   let setImages4 = setImages[2];
-                  
-                  printProduct(productName, productPrice, productDescription, setImages2, setImages3, setImages4)
+                  // console.log(productName, productPrice, productDescription, setImages2)
+                  printProduct(productName, productPrice, productDescription, setImages2, setImages3, setImages4, spaceName)
               });
           })
       })
@@ -114,26 +114,19 @@ function getDataFetch(url, spaceName) {
 
 
 
-function printProduct(productName, productPrice, productDescription, setImages2, setImages3, setImages4) {
-  const sofaContainer = $('#sofaContainer');
-  let furnitureContainer = $("<div></div>");
-  furnitureContainer.attr({
-      class: 'furniturecontainer col'
-  });
-  sofaContainer.append(furnitureContainer);
-  let imageFurniture = $("<img></img>");
-  imageFurniture.attr({
-      class: 'furniture',
-      src: setImages2,
-      'data-img2': setImages3, 
-      'data-img3': setImages4
-  });
-  furnitureContainer.append(imageFurniture);
-  let titleFurniture = $("<h3></h3>").text(productName);
-  furnitureContainer.append(titleFurniture);
-  let priceFurniture = $("<span></span>").text(`$ ${productPrice}`);
-  furnitureContainer.append(priceFurniture);
-
+function printProduct(productName, productPrice, productDescription, setImages2, setImages3, setImages4, spaceName) {
+  console.log("secorrióunavez")
+  let template = `
+  <div class="col furniturecontainer">
+      <img src=${setImages2} data-img2=${setImages3} data-img3=${setImages4} class="furniture" alt="">
+      <h5>${productName}</h5>
+      <span>${productPrice}</span>
+    </div>
+</div>`;
+const spaceContainer = document.getElementById(spaceName)
+var newDiv = document.createElement("div");
+newDiv.innerHTML = template;
+spaceContainer.append(newDiv);
 }
 }
 

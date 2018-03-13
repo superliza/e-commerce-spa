@@ -145,7 +145,7 @@ function createFurnitureSection(spaceObject, sectionSearch) {
     console.log("secorrióunavez")
     let template = `
   <div class=" col furniturecontainer">
-      <img src=${setImages2} data-img2=${setImages3} data-img3=${setImages4} data-name='${productName}'  data-price='${productPrice}' data-description=${productDescription} class="furniture" alt="" onclick="getProduct(this)">
+      <img src=${setImages2} data-img2=${setImages3} data-img3=${setImages4} data-name="${productName}"  data-price=${productPrice} data-description="${productDescription}" class="furniture" alt="" onclick="getProduct(this)">
       <h5>${productName}</h5>
       <span>${productPrice}</span>
       <button class = "button" onclick="getCar(this)">Agregar al carrito</button>

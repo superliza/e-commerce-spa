@@ -101,7 +101,7 @@ function createFurnitureSection(spaceObject, sectionSearch) {
     let furniturecontainer = $("<div></div>");
     furniturecontainer.attr({
       id: spaceName,
-      class : "col nopadding"
+      class : "row nopadding"
     });
     $('#furniturecontainer').append(furnitureTitle);
     $('#furniturecontainer').append(furniturecontainer);
@@ -142,7 +142,7 @@ function createFurnitureSection(spaceObject, sectionSearch) {
 //console.log($('#furniturecontainer'));
     console.log("secorrióunavez")
     let template = `
-  <div class="furniturecontainer">
+  <div class=" col furniturecontainer">
       <img src=${setImages2} data-img2=${setImages3} data-img3=${setImages4} data-name='${productName}'  data-price='${productPrice}' data-description=${productDescription} class="furniture" alt="" onclick="getProduct(this)">
       <h5>${productName}</h5>
       <span>${productPrice}</span>

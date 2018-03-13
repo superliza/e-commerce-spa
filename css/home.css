@@ -17,6 +17,7 @@ body {
 }
 
 #info-container {
+  background-image: url("assets/images/background2.jpg");
   text-align: center;
 }
 
@@ -101,7 +102,7 @@ body {
   text-align: center;
   vertical-align: middle;
   line-height: 300px;
-  font-family: 'Allura', cursive;
+  font-family: 'Kaushan Script', cursive;
   font-weight: 500;
   font-size: 80px;
   color: white;
@@ -111,7 +112,7 @@ body {
   text-align: center;
   vertical-align: middle;
   line-height: 600px;
-  font-family: 'Allura', cursive;
+  font-family: 'Kaushan Script', cursive;
   font-weight: 500;
   font-size: 80px;
   color: white;
@@ -122,11 +123,7 @@ body {
 
 .tips {
   display: inline-block;
-}
-
-.blog-img {
-  border-radius: 100%;
-  width: 70%;
+  color: #f3f3f3;
 }
 
 @media (min-width: 768px) {
@@ -190,9 +187,6 @@ body {
       display: block;
       visibility: visible;
   }
-
-}
-
 
 /* TODO: Hacer un media query de los hover effects para mobile */
 .hovereffect {

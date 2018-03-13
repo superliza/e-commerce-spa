@@ -28,8 +28,8 @@ const dataFourniture = {
     'bedroom': {
         'title': 'Bedroom',
         'description': 'One-third of our lives is spent sleeping, an activity that often takes place in the bedroom. In addition to being a room for sleep, the bedroom also serves as a private sanctuary or retreat, a place to take refuge from the world outside',
-        'firstCarrousel': ["../assets/images/bd1.jpg", "../assets/images/bd2.jpg", "../assets/images/bd3.jpg.jpg"],
-        'suggestedColorPalletes': ["assets/images/cp1.png", "../assets/images/cp2.png", "../assets/images/cp3.png"],
+        'firstCarrousel': ["assets/images/bd1.jpg", "assets/images/bd2.jpg", "assets/images/bd3.jpg.jpg"],
+        'suggestedColorPalletes': ["assets/images/cp1.png", "assets/images/cp2.png", "assets/images/cp3.png"],
         'tips': {
             'title': 'Basic tips to decorate your Bedroom',
             'firstTip': {
@@ -53,8 +53,8 @@ const dataFourniture = {
     'dinning': {
         'title': 'Dinning Room',
         'description': "The dinning room is a key part in the family dinning experience, it's a social and joyous place for the serving and consumption of food.",
-        'firstCarrousel': ["../assets/images/di.jpg","../assets/images/din2.jpg", "../assets/images/din3.jpg"],
-        'suggestedColorPalletes': ["../assets/images/cp10.png", "../assets/images/cp13.png", "../assets/images/cp6.png"],
+        'firstCarrousel': ["assets/images/di.jpg","assets/images/din2.jpg", "assets/images/din3.jpg"],
+        'suggestedColorPalletes': ["assets/images/cp10.png", "assets/images/cp13.png", "assets/images/cp6.png"],
         'tips': {
             'title': 'Basic tips to decorate your Outdoors',
             'firstTip': {
@@ -64,12 +64,12 @@ const dataFourniture = {
             },
             'secondTip': {
                 "title": 'Work the room',
-                'image': '../assets/images/cd2.jpg',
+                'image': 'assets/images/cd2.jpg',
                 'content': 'A dining room without a dining room table is, well, just a room. So make sure that your lighting plan compliments your dining furniture – after all, it is the room where you’ll be making memories with loved ones for years to come.'
             },
             'thirdTip': {
                 "title": 'Decorate the walls',
-                'image': '../assets/images/cd3.jpg',
+                'image': 'assets/images/cd3.jpg',
                 'content': 'Pro tip: Never, ever, ever underestimate the impact that your wall color and décor can have on the room. Not only is it some of the largest real estate in any space, it’s the perfect opportunity for you to make the dining room feel truly your own.'
             }
         }
@@ -78,23 +78,23 @@ const dataFourniture = {
     'outdoor': {
         'title': 'Outdoors',
         'description': 'Warmer temperatures, bright blue skies, and sunny days are luring you outside, and your patio should have areas to lounge and to have fun too!',
-        'firstCarrousel': ["../assets/images/ou1.jpg", "../assets/images/ou2.jpg", "../assets/images/ou3.jpg"],
-        'suggestedColorPalletes': ["../assets/images/cp12.png", "../assets/images/cp8.png", "../assets/images/cp4.png"],
+        'firstCarrousel': ["assets/images/ou1.jpg", "assets/images/ou2.jpg", "assets/images/ou3.jpg"],
+        'suggestedColorPalletes': ["assets/images/cp12.png", "assets/images/cp8.png", "assets/images/cp4.png"],
         'tips': {
             'title': 'Basic tips to decorate your Outdoors',
             'firstTip': {
                 "title": 'Consider sight lines',
-                'image': '../assets/images/cd11.jpg',
+                'image': 'assets/images/cd11.jpg',
                 'content': 'Your focal point should be free and clear from one room to the next, so that it feels like you’re being drawn between them. That’s why the best spot for a focal point is usually directly across from the entrance to the room.'
             },
             'secondTip': {
                 "title": 'Remember always to use furniture approved to be outdoors',
-                'image': '../assets/images/cd12.jpg',
+                'image': 'assets/images/cd12.jpg',
                 'content': "There are a lot of new materials for outdoor furniture but don't forget the classic teka wood."
             },
             'thirdTip': {
                 "title": 'Tropical Punch',
-                'image': '../assets/images/cd13.jpg',
+                'image': 'assets/images/cd13.jpg',
                 'content': 'Want to add a touch of fun to your outdoor space? Cue the colorful accents. A terrace gets a bold pick-me-up from cushions in vibrant colors (tangerine, fuchsia) and modern prints like ikat, stripes, and eye-popping florals.'
             }
         }
@@ -104,23 +104,23 @@ const dataFourniture = {
     'studio': {
         'title': 'Studio',
         'description': "The living room is a space of social gathering, a place where all family members can come together and take part in a range of activities.",
-        'firstCarrousel': ["../assets/images/s1.jpg", "../assets/images/s2.jpg", "../assets/images/s3.jpg"],
-        'suggestedColorPalletes': ["../assets/images/cp1.png", "../assets/images/cp7.png", "../assets/images/cp11.png"],
+        'firstCarrousel': ["assets/images/s1.jpg", "assets/images/s2.jpg", "assets/images/s3.jpg"],
+        'suggestedColorPalletes': ["assets/images/cp1.png", "assets/images/cp7.png", "assets/images/cp11.png"],
         'tips': {
             'title': 'Basic tips to decorate your Studio',
             'firstTip': {
                 "title": 'Think your lightning',
-                'image': '../assets/images/ss1.jpg',
+                'image': 'assets/images/ss1.jpg',
                 'content': "A word about lighting: even if you have ceiling lights, invest in good task lighting. It’s more conducive to studying since you can directly control the light source."
             },
             'secondTip': {
                 "title": 'Use a clear color palette',
-                'image': '../assets/images/ss2.jpg',
+                'image': 'assets/images/ss2.jpg',
                 'content': "The walls of the study should be painted in a lighter hue. It should not be so light that the ambience of the room makes you feel bored and gloomy, and it should not be so dark that it affects your vision."
             },
             'thirdTip': {
                 "title": 'Use the desk as a focal point',
-                'image': '../assets/images/ss3.jpg',
+                'image': 'assets/images/ss3.jpg',
                 'content': 'Anchor the study space with a desk, or table desk, and place it against the wall.'
             }
         }

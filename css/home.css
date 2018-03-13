@@ -57,7 +57,7 @@ body {
   }
 }
 
-#bed {
+#bed2 {
   grid-area: bed;
   background-image: url(../assets/images/bed.jpg);
   background-repeat: no-repeat;

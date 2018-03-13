@@ -87,6 +87,9 @@ function selectObject(sectionSearch) {
 
 //Función que itera en muebles para hacer fetch por cada endpoint
 function createFurnitureSection(spaceObject, sectionSearch) {
+  document.getElementById('furniturecontainer').innerHTML=' ';
+
+//  $('#furniturecontainer').Text('');
   // console.log(spaceObject);
 
   $.each(spaceObject, function (objectKey) {
@@ -98,10 +101,12 @@ function createFurnitureSection(spaceObject, sectionSearch) {
     let furniturecontainer = $("<div></div>");
     furniturecontainer.attr({
       id: spaceName,
+      class : "col nopadding"
     });
     $('#furniturecontainer').append(furnitureTitle);
     $('#furniturecontainer').append(furniturecontainer);
     getDataFetch(url, spaceName, sectionSearch);
+
   })
 
   function getDataFetch(url, spaceName, sectionSearch) {
@@ -134,15 +139,14 @@ function createFurnitureSection(spaceObject, sectionSearch) {
 
 
   function printProduct(productName, productPrice, productDescription, setImages2, setImages3, setImages4, spaceName) {
-    // $('#furniturecontainer').innerHTML("");
+//console.log($('#furniturecontainer'));
     console.log("secorrióunavez")
     let template = `
-  <div class="col furniturecontainer">
-      <img src=${setImages2} data-img2=${setImages3} data-img3=${setImages4} data-name=${productName}  data-price=${productPrice} data-description=${productDescription} class="furniture" alt="" onclick="getProduct(this)">
+  <div class="furniturecontainer">
+      <img src=${setImages2} data-img2=${setImages3} data-img3=${setImages4} data-name='${productName}'  data-price='${productPrice}' data-description=${productDescription} class="furniture" alt="" onclick="getProduct(this)">
       <h5>${productName}</h5>
       <span>${productPrice}</span>
       <button>Agregar al carrito</button>
-    </div>
 </div>`;
     const spaceContainer = document.getElementById(spaceName)
     spaceContainer.insertAdjacentHTML('beforeend', template);

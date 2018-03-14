@@ -1,7 +1,7 @@
 body{
   background: #f3f3f3;
   color: #828282;
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: 'Heebo', sans-serif;
 }
 
 #nav{
@@ -12,6 +12,17 @@ body{
   z-index: 999;
 }
 
+.fancy{
+  color: white;
+}
+
+a{
+  color: inherit
+}
+
+.fancy:hover{
+  color: white !important
+}
 #logo{
   height: 7vh;
 }
@@ -83,6 +94,12 @@ body{
   display: inline-block;
 }
 
+.car{
+  background-color: #82828294;
+  color: white;
+
+}
+
 .icons{
   color: #fff;
 }
@@ -95,10 +112,26 @@ body{
   margin-left: 20%;
 }
 
+.blackletter{
+color: black;
+}
+.container2 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 footer{
   background-color: #828282;
   color: #f9c800;
-  font-family: 'Kaushan Script', cursive;
+  font-family: 'Heebo', sans-serif;
 }
 
 .link{

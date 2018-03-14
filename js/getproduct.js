@@ -18,12 +18,8 @@ function getProduct(eventTrigger) {
     <br>
     <h2 class="">${name}</h2>
     <div class="row"> 
-    <div  class="col-2">
-      <img class="img-fluid" src=${img2} alt="cajon">
-      <img class="img-fluid" src=${img3} alt="cajon">
-    </div>
-    <div class="col">
-        <img class="img-fluid" src=${img1} alt="cajon">
+    
+    
     </div>
     <div class="col">
         <h5> Descripción </h5>

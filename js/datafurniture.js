@@ -3,7 +3,7 @@ const dataFourniture = {
         'title': 'Living Room',
         'description': 'The living room is a space of social gathering, a place where all family members can come together and take part in a range of activities',
         'firstCarrousel': ["assets/images/livin.jpg", "assets/images/livin1.jpg", "assets/images/livin2.jpg"],
-        'suggestedColorPalletes': ["assets/images/cp7.png", "assets/images/cp5.png", "assets/images/cp11.png"],
+        'suggestedColorPalletes': ["assets/images/cp7.png","assets/images/cp5.png", "assets/images/cp11.png"],
         'tips': {
             'title': 'Basic tips to decorate your living room',
             'firstTip': {

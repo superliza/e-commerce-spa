@@ -17,6 +17,7 @@ body {
 }
 
 #info-container {
+  background-image: url("assets/images/background2.jpg");
   text-align: center;
 }
 
@@ -101,7 +102,7 @@ body {
   text-align: center;
   vertical-align: middle;
   line-height: 300px;
-  font-family: 'Allura', cursive;
+  font-family: 'Heebo', sans-serif;
   font-weight: 500;
   font-size: 80px;
   color: white;
@@ -111,7 +112,7 @@ body {
   text-align: center;
   vertical-align: middle;
   line-height: 600px;
-  font-family: 'Allura', cursive;
+  font-family: 'Heebo', sans-serif;
   font-weight: 500;
   font-size: 80px;
   color: white;
@@ -122,11 +123,8 @@ body {
 
 .tips {
   display: inline-block;
-}
-
-.blog-img {
-  border-radius: 100%;
-  width: 70%;
+  color: #f3f3f3;
+  background-color: black;
 }
 
 @media (min-width: 768px) {
@@ -191,9 +189,6 @@ body {
       visibility: visible;
   }
 
-}
-
-
 /* TODO: Hacer un media query de los hover effects para mobile */
 .hovereffect {
   width: 100%;
@@ -238,8 +233,8 @@ body {
 
 .hovereffect:hover  {
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
-  filter: brightness(0.6);
-  -webkit-filter: brightness(0.6);
+  filter: brightness(0.85);
+  -webkit-filter: brightness(0.85);
 }
 
 .hovereffect h2 {
@@ -249,7 +244,6 @@ body {
   background-color: transparent;
   color: #FFF;
   padding: 1em 0;
-  opacity: 1;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
@@ -260,7 +254,7 @@ body {
 .hovereffect a, .hovereffect p {
   color: #FFF;
   padding: 1em 0;
-  opacity: 0;
+  opacity: 1;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
@@ -278,4 +272,9 @@ body {
 .furniture{
   max-height: 150px;
   min-height: 100px;
+}
+
+.furniturecontainer{
+  background-color: rgba(128, 128, 128, 0.384);
+  margin: 20px;
 }

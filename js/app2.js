@@ -8,10 +8,6 @@ let homePage = document.getElementById('homepage');
 let productPage = document.getElementById('product')
 //let firstCarrousel = document.getElementById('title');
 
-
-
-
-
 function getData(eventTrigger) {
   event.preventDefault();
   homePage.classList.add('d-none');
@@ -37,6 +33,7 @@ function getData(eventTrigger) {
   let firstSectionColorPallete = sectionColorPallete[0];
   $('#firstPallete').attr('src', firstSectionColorPallete);
   let secondSectionColorPallete = sectionColorPallete[1];
+  console.log()
   $('#secondPallete').attr('src', secondSectionColorPallete);
   let thirdSectionColorPallete = sectionColorPallete[2];
   $('#thirdPallete').attr('src', thirdSectionColorPallete);
@@ -69,7 +66,7 @@ function selectObject(sectionSearch) {
       'lamp': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=lamp&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x",
       'coffetable': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=coffe%20table&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x",
       'rugs': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=rugs&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x",
-      'ottoman': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=ottoman&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x",
+      'ottoman': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=ottoman&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x"
       //    'consoletable':  "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=console+table&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x"
     }
     createFurnitureSection(living, sectionSearch)
@@ -79,12 +76,38 @@ function selectObject(sectionSearch) {
       'nightstand': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=night%20stand&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x",
       'dresser': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=dresser&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x",
       'nightlamp': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=night%20lamp&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x",
-      'storage': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=storage&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x",
+      'storage': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=storage&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x"
       //    'consoletable':  "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=console+table&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x"
     }
     createFurnitureSection(bedroom, sectionSearch)
+  }else if (sectionSearch === 'studio') {
+    const studio = {
+      'desk': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=desk&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x",
+      'deskchair': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=desk%20chair&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x",
+      'bookcase': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=bookcase&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x"
+      //    'consoletable':  "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=console+table&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x"
+    }
+    createFurnitureSection(studio, sectionSearch)
+  }else if (sectionSearch === 'garden') {
+    const garden = {
+      'sofa': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=outdoor%20sofa&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x",
+      'chair': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=outdoor%20chair&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x",
+      'table': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=outdoor%20table&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x",
+      'bench': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=bench&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x"
+      //    'consoletable':  "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=console+table&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x"
+    }
+    createFurnitureSection(garden, sectionSearch)
+  }else if (sectionSearch === 'dinning') {
+    const dinning = {
+      'dinnertable': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=dinner%20table&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x",
+      'dinnerchair': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=dinner%20chair&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x",
+      'dinningbuffet': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=buffet%20dinning&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x",
+      'barcart': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=bar%20cart&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x",
+      'barstools': "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=bar%20stools&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x"
+      //    'consoletable':  "https://cors-anywhere.herokuapp.com/http://api.walmartlabs.com/v1/search?query=console+table&format=json&apiKey=xtqvmkkcabv8w66e7rnwtt8x"
+    }
+    createFurnitureSection(dinning, sectionSearch)
   }
-
 }
 
 //Función que itera en muebles para hacer fetch por cada endpoint
@@ -138,8 +161,6 @@ function createFurnitureSection(spaceObject, sectionSearch) {
       })
   }
 
-
-
   function printProduct(productName, productPrice, productDescription, setImages2, setImages3, setImages4, spaceName) {
 //console.log($('#furniturecontainer'));
     console.log("secorrióunavez")
@@ -148,7 +169,7 @@ function createFurnitureSection(spaceObject, sectionSearch) {
       <img src=${setImages2} data-img2=${setImages3} data-img3=${setImages4} data-name="${productName}"  data-price=${productPrice} data-description="${productDescription}" class="furniture" alt="" onclick="getProduct(this)">
       <h5>${productName}</h5>
       <span>${productPrice}</span>
-      <button class = "button" onclick="getCar(this)">Agregar al carrito</button>
+      <button class="btn button d-block mx-auto" type="button" id="addCart " data-img=${setImages2} data-name= "${productName}"  data-price= ${productPrice} onclick="getCart(this)"> Agregar al carrito </button>
   </div>`;
     const spaceContainer = document.getElementById(spaceName)
     spaceContainer.insertAdjacentHTML('beforeend', template);

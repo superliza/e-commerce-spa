@@ -1,71 +1,83 @@
-let arrayProducts = [];
-function getCart(eventT) {
-    // console.log(eventT.dataset);
-    let price = eventT.dataset.price;
-    let name = eventT.dataset.name;
-    let image = eventT.dataset.img;
-    let obj = {"name": name, "price": price, "imagen": image};
-    arrayProducts.push(obj);
-    // console.log(array);
-    
-    
-    let counter = document.getElementById("counter");
-    counter.innerHTML++;
-    // removeFromCart(arrayProducts);
+function getCart(eventTrigger) {
+    if (eventTrigger.classList.contains('clicked') === false) {
+        console.log("no tiene clicked")
+        increaseCounter(eventTrigger);
+        changeButtonStatus(false, eventTrigger);
+        addProduct(eventTrigger)
+    } else if (eventTrigger.classList.contains('clicked') === true) {
+        console.log(eventTrigger);
+        console.log("sí tiene clickled")
+        decreaseCounter(eventTrigger);
+        changeButtonStatus(true, eventTrigger);
+        deleteProduct(eventTrigger)
+    }
 }
 
 
-// let cartProducts = [];
-// function getCart(eventT) {
-//   if (btnEvent.classList.contains('clicked') == false ) {
-//     increaseCounter();
-//     changeButtonStatus(btnEvent,false);
-//     let newArray = data.products.filter(function(element){
-//       if (productId == element.id) {
-//           cartProducts.push(element);
-//       }
-//     })
-//    console.log(cartProducts);
-//    localStorage.setItem("newProducts",JSON.stringify(cartProducts));
-//   }else if (btnEvent.classList.contains('clicked') == true ){
-//     decreaseCounter()
-//     changeButtonStatus(btnEvent,true);
-//     removeFromCart(productId)
-//     console.log(cartProducts);
-//   }
-// }
-// function removeFromCart(arrayProducts) {
-//     console.log(arrayProducts);
-    
-//     arrayProducts = arrayProducts.filter(function(element){
-//     return  element.id !== productId
-//     console.log(newArray);
-//   });
-// }
-// function increaseCounter() {
-//   let counter = parseInt(document.getElementById("counterItems").textContent);
-//   let counter2 = document.getElementById("counterItems");
-//   counter += 1
-//   counter2.innerHTML = counter;
-//   saveItemsContent(counter)
-// }
-// function decreaseCounter() {
-//   let counter = parseInt(document.getElementById("counterItems").textContent);
-//   let counter2 = document.getElementById("counterItems");
-//   counter -= 1
-//   counter2.innerHTML = counter;
-//   saveItemsContent(counter)
-// }
-// function changeButtonStatus(button,boolean) {
-//   if (boolean == false) {
-//     button.innerText = ("Quitar del carrito");
-//     button.classList.toggle("clicked");
-//   }else if (boolean == true) {
-//     button.innerText = ("Agregar al carrito");
-//     button.classList.toggle("clicked");
-//   }
-// }
-// function saveItemsContent (counter){
-//   localStorage.setItem("saveProducts",counter);
-// }
+function increaseCounter(eventTrigger) {
+    eventTrigger.classList.toggle('clicked');
+    console.log(eventTrigger);
+    const counter = document.getElementById('counterItems');
+    let counterNumber = parseInt(document.getElementById('counterItems').textContent);
+    counterNumber += 1
+    saveCounter(counterNumber);
+    counter.innerHTML = counterNumber;
+}
 
+function decreaseCounter(eventTrigger) {
+    eventTrigger.classList.toggle('clicked')
+    const counter = document.getElementById('counterItems');
+    let counterNumber = parseInt(document.getElementById('counterItems').textContent);
+    counterNumber -= 1
+    saveCounter(counterNumber);
+    counter.innerHTML = counterNumber;
+}
+
+
+function changeButtonStatus(condition, eventTrigger) {
+    if (condition === true) {
+        eventTrigger.textContent = 'Agregar al carrito';
+    } else if (condition === false) {
+        eventTrigger.textContent = 'Quitar del carrito';
+    }
+}
+
+
+shoppingCart = [];
+
+
+
+function addProduct(eventTrigger) {
+    let myId = new Date().getTime();
+    let price = eventTrigger.dataset.price;
+    let name = eventTrigger.dataset.name;
+    let image = eventTrigger.dataset.img;
+    let obj = {
+        "name": name,
+        "price": price,
+        "imagen": image,
+        "id": myId
+    };
+    shoppingCart.push(obj);
+    console.log(shoppingCart);
+    saveShoppingCart();
+}
+
+
+function deleteProduct(eventTrigger) {
+    shoppingCart = shoppingCart.filter(function (item) {
+        return item.name !== eventTrigger.dataset.name
+    })
+    console.log(shoppingCart);
+    saveShoppingCart();
+}
+
+
+function saveShoppingCart() {
+    localStorage.setItem("shoppingCartLS", JSON.stringify(shoppingCart));
+
+}
+
+function saveCounter(counterNumber) {
+    localStorage.setItem("firstCounter", counterNumber);
+}

@@ -4,55 +4,89 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="">
-  <title>e-commerce</title>
+  <title>Furniture Connection</title>
+  <link rel="icon" type="image/png" href="assets/images/logosilla.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed|Allura|Italianno|Mr+Dafoe|Work+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Heebo:100" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/home.css">
   <body>
 
-    <!-- Navbar -->
-    <nav id="nav" class="navbar navbar-expand-lg navbar-light">
+   <!-- Navbar -->
+   <nav id="nav" class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <img id="logo" src="assets/images/logo.png" alt="logo">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul id="sections-cont" class="navbar-nav text-faded ml-2">
             <li class="nav-item active">
-              <a id="home" class="nav-link" href="index.html">Home
+              <a id="home" class="nav-link font-weight-bold text-uppercase" href="index.html">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item links">
+<<<<<<< HEAD
               <a id="living" name="living" class="nav-link" href="#spacetemplate" onclick="getData(this)">Living Room</a>
+||||||| merged common ancestors
+              <a id="living" class="nav-link" href="#spacetemplate" onclick="getData(this)">Living Room</a>
+=======
+              <a name="living" id="living" class="nav-link text-uppercase" href="#spacetemplate" onclick="getData(this)">Living Room</a>
+>>>>>>> bbcf1fbf4f52dd39be1841795d0e1c4a370807b6
             </li>
             <li class="nav-item links">
+<<<<<<< HEAD
               <a id="bedroom" name="bedroom" class="nav-link " onclick="getData(this)" href="#spacetemplate">Bedroom</a>
+||||||| merged common ancestors
+              <a id="bedroom" class="nav-link " onclick="getData(this)" href="#spacetemplate">Bedroom</a>
+=======
+              <a name="bedroom" id="bedroom" class="nav-link text-uppercase" onclick="getData(this)" href="#spacetemplate">Bedroom</a>
+>>>>>>> bbcf1fbf4f52dd39be1841795d0e1c4a370807b6
             </li>
             <li class="nav-item links">
+<<<<<<< HEAD
               <a id="dinning" name="dinning" class="nav-link " onclick="getData(this)" href="#spacetemplate">Dinning Room</a>
+||||||| merged common ancestors
+              <a id="dinning" class="nav-link " onclick="getData(this)" href="#spacetemplate">Dinning Room</a>
+=======
+              <a id="dinning" name="dinning" class="nav-link text-uppercase" onclick="getData(this)" href="#spacetemplate">Dinning Room</a>
+>>>>>>> bbcf1fbf4f52dd39be1841795d0e1c4a370807b6
             </li>
             <li class="nav-item links">
+<<<<<<< HEAD
               <a id="outdoor" name="outdoor" class="nav-link " onclick="getData(this)" href="#spacetemplate">Outdoors</a>
+||||||| merged common ancestors
+              <a id="outdoor" class="nav-link " onclick="getData(this)" href="#spacetemplate">Outdoors</a>
+=======
+              <a id="outdoor" name="outdoor" class="nav-link text-uppercase" onclick="getData(this)" href="#spacetemplate">Outdoors</a>
+>>>>>>> bbcf1fbf4f52dd39be1841795d0e1c4a370807b6
             </li>
             <li class="nav-item links">
+<<<<<<< HEAD
               <a id="studio" name="studio" class="nav-link " onclick="getData(this)" href="#spacetemplate">Studio</a>
+||||||| merged common ancestors
+              <a id="studio" class="nav-link " onclick="getData(this)" href="#spacetemplate">Studio</a>
+=======
+              <a id="studio" name="studio" class="nav-link text-uppercase" onclick="getData(this)" href="#spacetemplate">Studio</a>
+>>>>>>> bbcf1fbf4f52dd39be1841795d0e1c4a370807b6
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link btn" data-toggle="modal" href="#exampleModalLong">
                 <i id="cart" class="fas fa-shopping-cart"></i>
-                <span id="counter" class="badge badge-info">0</span>
+                <span id="counterItems" class="badge badge-info text-uppercase">0</span>
               </a>
             </li>
             <li class="nav-item">
-              <a id="search" class="nav-link btn btn-success" href="views/search.html">Search</a>
+              <a id="search" class="nav-link btn btn-success text-uppercase" href="views/search.html">Search</a>
             </li>
           </ul>
         </div>
@@ -61,60 +95,82 @@
     <!-- Termina Navbar -->
 
     <div id="homepage">
-      <div class="container-fluid nopadding">
-        <!-- Carousel -->
-        <div class="row nopadding">
-          <div class="col nopadding">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner tales">
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="assets/images/livingroom.jpg" alt="First slide">
+        <div class="container-fluid nopadding">
+          <!-- Carousel -->
+          <div class="row nopadding">
+            <div class="col nopadding">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner tales">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/images/livingroom.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item tales">
+                    <img class="d-block w-100" src="assets/images/outdoor.jpg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item tales">
+                    <img class="d-block w-100" src="assets/images/livingroom3.jpg" alt="Third slide">
+                  </div>
                 </div>
-                <div class="carousel-item tales">
-                  <img class="d-block w-100" src="assets/images/outdoor.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item tales">
-                  <img class="d-block w-100" src="assets/images/livingroom3.jpg" alt="Third slide">
-                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
             </div>
           </div>
-        </div>
+  
 
         <!-- Info -->
         <div class="row nopadding">
-          <div class="col nopadding">
-            <div id="info-container" class="mt-5">
-              <h1 class="mt-2">About us</h1>
-              <p class="mt-2  m-2 p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="col nopadding">
+              <div id="info-container" class="mt-5">
+                <h1 class="mt-2 font-weight-bold text-uppercase">ABOUT US</h1>
+                <div class="container2">
+                  <img src="assets/images/background.jpg" alt="Norway" style="width:70%;">
+                  <div class="centered">
+                    <p class="mt-2  m-2 p-5  font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                      eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                      mollit anim id est laborum.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+<<<<<<< HEAD
         </div>
         <!-- Termina Carousel -->
+||||||| merged common ancestors
+        </div>
+=======
+>>>>>>> bbcf1fbf4f52dd39be1841795d0e1c4a370807b6
 
-        <!-- Categories -->
-        <div class="row nopadding mb-5">
+       <!-- Categories -->
+       <div class="row nopadding mb-5">
           <div class="col nopadding mb-5">
-            <section id="categories" class="mt-2  p-4">
-              <h1>Categories</h1>
+            <section id="categories" class="mt-2 pt-5  p-4">
+              <h1 class="font-weight-bold text-uppercase">Categories</h1>
+              <h4 class=" text-uppercase">Start furnishing your house, check our furniture categories:</h4>
               <!-- Pongo un break porque no puedo separar el título de las imágenes con margin :( -->
               <br>
               <div class="grid mt-2">
+<<<<<<< HEAD
                 <div onclick="getData(this)" class="gridimg hovereffect" name="bedroom"  id="bed2">
+||||||| merged common ancestors
+                <div onclick="getData(this)" class="gridimg hovereffect" alt="" id="bed2">
+=======
+                <div onclick="getData(this)" class="gridimg hovereffect" name="bedroom" id="bed2">
+>>>>>>> bbcf1fbf4f52dd39be1841795d0e1c4a370807b6
                   <div class="border2 overlay mt-1 mb-1 ">
                     <h2>Bedroom</h2>
                   </div>
@@ -134,7 +190,13 @@
                     <h2>Studio</h2>
                   </div>
                 </div>
+<<<<<<< HEAD
                 <div onclick="getData(this)" class="gridimg hovereffect" name="outdoor" id="out">
+||||||| merged common ancestors
+                <div onclick="getData(this)" class="gridimg hovereffect" id="out">
+=======
+                <div onclick="getData(this)" class="gridimg hovereffect" name="autoddor" id="out">
+>>>>>>> bbcf1fbf4f52dd39be1841795d0e1c4a370807b6
                   <div class="border2 overlay mt-1 mb-1">
                     <h2>Outdoors</h2>
                   </div>
@@ -145,6 +207,7 @@
         </div>
         <!-- Termina Categories -->
 
+<<<<<<< HEAD
         <!-- Best Seller`s -->
 
         <h1 class="text-center">Best Seller's</h1>
@@ -204,43 +267,182 @@
           </div>
         </div>
         <!-- Termina Best Seller`s -->
+||||||| merged common ancestors
+        <!-- Best Seller`s -->
 
-        <!--Blog-->
-        <div class="row nopadding mt-5 mb-5">
-          <div class="col nopadding mt-3">
-            <div class="blog-cont">
-              <h1 class="mb-3 text-center">Blog</h1>
-              <h5 class="text-center">Are you looking for ideas? Check out our blog entries!</h5>
-              <div class="row nopadding mt-5">
-                <div class="tips col">
-                  <img class="card-img-top blog-img" src="assets/images/rug2b.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Learn how to make your bedroom look bigger</h5>
-                    <p class="card-text">If you have a small bedroom, you’re not alone – it’s one of the most common bedroom decorating issues. You have to remodel to add actual square footage, but luckily, there are decorating tricks to fool the eye into seeing your bedroom
-                      as larger than it actually is. </p>
-                    <a href="#" class="btn btn-primary button">Learn More</a>
-                  </div>
-                </div>
-                <div class="tips col">
-                  <img class="card-img-top blog-img" src="assets/images/lampara-3a.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Learn how to choose lighting for a room</h5>
-                    <p class="card-text">Choosing the lighting fixtures for the house is one of the details you need to plan when decorating a new space. But the decision is not easy, not even if you're planning a simple makeover or renovation. But you have to be organized
-                      and to to take things one by one, room by room.</p>
-                    <a href="#" class="btn btn-primary button">Learn More</a>
-                  </div>
-                </div>
-                <div class="tips col">
-                  <img class="card-img-top blog-img" src="assets/images/square.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Check out how to give personality to your office </h5>
-                    <p class="card-text">Whether you're setting up a new office space or trying to breathe life into an existing office, we've come up with eight important things to consider.</p>
-                    <a href="#" class="btn btn-primary button">Learn More</a>
-                  </div>
-                </div>
+        <h1 class="text-center">Best Seller's</h1>
+        <h6 class="mt-2 text-center">Check this items, they're on fire!</h6>
+        <div class="container-fluid mt-5">
+          <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
+            <div class="carousel-inner row w-100 mx-auto" role="listbox">
+              <div class="carousel-item col-md-4 active">
+                <img class="img-fluid mx-auto d-block" src="assets/images/dinnerbuffete4a.jpg" alt="slide 1">
+                <h2>Piziano Buffete</h2>
+                <h5>$16,788 MXN</h5>
+              </div>
+              <div class="carousel-item col-md-4">
+                <img class="img-fluid mx-auto d-block" src="assets/images/storage1a.jpg" alt="slide 2">
+                <h2>Credenza</h2>
+                <h5>$12,398 MXN</h5>
+              </div>
+              <div class="carousel-item col-md-4">
+                <img class="img-fluid mx-auto d-block" src="assets/images/sbookcase1a.jpg" alt="slide 3">
+                <h2>Chicago</h2>
+                <h5>$7,495 MXN</h5>
+              </div>
+              <div class="carousel-item col-md-4">
+                <img class="img-fluid mx-auto d-block" src="assets/images/outtable1a.jpg" alt="slide 4">
+                <h2>Venezia</h2>
+                <h5>$3,450 MXN</h5>
+              </div>
+              <div class="carousel-item col-md-4">
+                <img class="img-fluid mx-auto d-block" src="assets/images/mesa3a.jpg" alt="slide 5">
+                <h2>Estocolmo</h2>
+                <h5>$6,238 MXN</h5>
+              </div>
+              <div class="carousel-item col-md-4">
+                <img class="img-fluid mx-auto d-block" src="assets/images/outchair2a.jpg" alt="slide 6">
+                <h2>Lima</h2>
+                <h5>$4,321 MXN</h5>
+              </div>
+              <div class="carousel-item col-md-4">
+                <img class="img-fluid mx-auto d-block" src="assets/images/dinner4a.jpg" alt="slide 7">
+                <h2>Iroquesia</h2>
+                <h5>$20,158 MXN</h5>
+              </div>
+              <div class="carousel-item col-md-4">
+                <img class="img-fluid mx-auto d-block" src="assets/images/outsofa3a.jpg" alt="slide 8">
+                <h2>Damasco</h2>
+                <h5>8,456 MXN</h5>
               </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+              <i class="fa fa-chevron-left fa-lg text-muted"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+              <i class="fa fa-chevron-right fa-lg text-muted"></i>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
+        </div>
+=======
+       <!-- Best Seller`s -->
+>>>>>>> bbcf1fbf4f52dd39be1841795d0e1c4a370807b6
+
+       <h1 class="text-center font-weight-bold text-uppercase">Our Best Seller's</h1>
+       <h6 class="mt-2 text-center">Hey! Check out this items, they're on fire!</h6>
+       <div class="container-fluid mt-5">
+         <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
+           <div class="carousel-inner row w-100 mx-auto" role="listbox">
+             <div class="carousel-item col-md-4 active">
+               <img class="img-fluid mx-auto d-block" src="assets/images/dinnerbuffete4a.jpg" alt="slide 1">
+               <div class="car">
+               <h2 >Piziano Buffete</h2>
+               <h5> $994</h5>
+               <button class="btn button d-block mx-auto" type="button" data-img="assets/images/dinnerbuffete4a.jpg" data-name="Piziano Buffete"
+               data-price="$994" onclick="getCart(this)"> Agregar al carrito </button>
+               <br>
+             </div>
+              
+             </div>
+             <div class="carousel-item col-md-4">
+               <img class="img-fluid mx-auto d-block" src="assets/images/storage1a.jpg" alt="slide 2">
+               <h2>Credenza</h2>
+               <h5> $750</h5>
+               <button class="btn button d-block mx-auto" type="button" data-img="assets/images/dinnerbuffete4a.jpg" data-name="Piziano Buffete"
+                 data-price="$994" onclick="getCart(this)"> Agregar al carrito </button>
+             </div>
+             <div class="carousel-item col-md-4">
+               <img class="img-fluid mx-auto d-block" src="assets/images/sbookcase1a.jpg" alt="slide 3">
+               <h2>Chicago</h2>
+               <h5> $324</h5>
+               <button class="btn button d-block mx-auto" type="button" data-img="assets/images/dinnerbuffete4a.jpg" data-name="Piziano Buffete"
+                 data-price="$994" onclick="getCart(this)"> Agregar al carrito </button>
+             </div>
+             <div class="carousel-item col-md-4">
+               <img class="img-fluid mx-auto d-block" src="assets/images/outtable1a.jpg" alt="slide 4">
+               <h2>Venezia</h2>
+               <h5> $140</h5>
+               <button class="btn button d-block mx-auto" type="button" data-img="assets/images/dinnerbuffete4a.jpg" data-name="Piziano Buffete"
+                 data-price="$994" onclick="getCart(this)"> Agregar al carrito </button>
+             </div>
+             <div class="carousel-item col-md-4">
+               <img class="img-fluid mx-auto d-block" src="assets/images/mesa3a.jpg" alt="slide 5">
+               <h2>Estocolmo</h2>
+               <h5> $398</h5>
+               <button class="btn button d-block mx-auto" type="button" data-img="assets/images/dinnerbuffete4a.jpg" data-name="Piziano Buffete"
+                 data-price="$994" onclick="getCart(this)"> Agregar al carrito </button>
+             </div>
+             <div class="carousel-item col-md-4">
+               <img class="img-fluid mx-auto d-block" src="assets/images/outchair2a.jpg" alt="slide 6">
+               <h2>Lima</h2>
+               <h5> $145</h5>
+               <button class="btn button d-block mx-auto" type="button" data-img="assets/images/dinnerbuffete4a.jpg" data-name="Piziano Buffete"
+                 data-price="$994" onclick="getCart(this)"> Agregar al carrito </button>
+             </div>
+             <div class="carousel-item col-md-4">
+               <img class="img-fluid mx-auto d-block" src="assets/images/dinner4a.jpg" alt="slide 7">
+               <h2>Iroquesia</h2>
+               <h5> $9,567</h5>
+               <button class="btn button d-block mx-auto" type="button" data-img="assets/images/dinnerbuffete4a.jpg" data-name="Piziano Buffete"
+                 data-price="$994" onclick="getCart(this)"> Agregar al carrito </button>
+             </div>
+             <div class="carousel-item col-md-4">
+               <img class="img-fluid mx-auto d-block" src="assets/images/outsofa3a.jpg" alt="slide 8">
+               <h2>Damasco</h2>
+               <h5> $546</h5>
+               <button class="btn button d-block mx-auto" type="button" data-img="assets/images/dinnerbuffete4a.jpg" data-name="Piziano Buffete"
+                 data-price="$994" onclick="getCart(this)"> Agregar al carrito </button>
+             </div>
+           </div>
+           <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+             <i class="fa fa-chevron-left fa-lg text-muted"></i>
+             <span class="sr-only">Previous</span>
+           </a>
+           <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+             <i class="fa fa-chevron-right fa-lg text-muted"></i>
+             <span class="sr-only">Next</span>
+           </a>
+         </div>
+       </div>
+       firstTipTitle
+       firstTipDescription
+       firstTipImg
+       secondTipTitle
+       thirdTipTitle
+        <!--Blog-->
+        <div class="row nopadding mt-5 mb-5">
+            <div class="nopadding mt-3 d-block mx-auto">
+                <h1 class="mb-3 text-center font-weight-bold text-uppercase ml-5">Blog</h1>
+                <h5 class="text-center">Are you looking for ideas? Check out our blog entries!</h5>
+                <div class="row nopadding mt-5">
+                  <div class="tips col card tips mb-3 nopadding" style="max-width: 18rem;">
+                    <img class="card-img-top blog-img" src="assets/images/rug2b.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h6 class="text-uppercase font-italic">tips</h6>
+                      <h5 class="card-title font-weight-bold text-uppercase">Learn how to make your bedroom look bigger</h5>
+                      <a class="fancy font-weight-bold" href="#">read more</a>
+                    </div>
+                  </div>
+                  <div class="tips col card tips mb-3 nopadding ml-5" style="max-width: 18rem;">
+                      <img class="card-img-top blog-img" src="assets/images/lampara-3a.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h6 class="text-uppercase font-italic">tips</h6>
+                        <h5 class="card-title font-weight-bold text-uppercase">Learn how to choose lighting for a room</h5>
+                        <a class="fancy font-weight-bold mt-2" href="#">read more</a>
+                      </div>
+                    </div>
+                    <div class="tips col card tips mb-3 nopadding ml-5" style="max-width: 18rem;">
+                        <img class="card-img-top blog-img" src="assets/images/square.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h6 class="text-uppercase font-italic">tips</h6>
+                          <h5 class="card-title font-weight-bold text-uppercase">Check out how to give personality to your office </h5>
+                          <a class="fancy font-weight-bold mt-2" href="#">read more</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
         </div>
       </div>
     </div>
@@ -255,8 +457,8 @@
           <br>
           <br>
           <br>
-          <h1 id="title">The title</h1>
-          <h6 class="p-3" id="description">The description</h6>
+          <h1 id="title" class="font-weight-bold text-uppercase">The title</h1>
+          <h6 class="p-3 font-weight-bold text-uppercase" id="description">The description</h6>
           <!-- Carousel -->
           <div class="row nopadding">
             <div class="col nopadding">
@@ -295,13 +497,14 @@
 
       <!-- Paletas de colores  -->
 
-      <h2 class="nopadding mt-5">Suggested color palletes</h2>
+      <h2 class="nopadding mt-5 font-weight-bold text-uppercase">Suggested color palletes</h2>
       <div class="nopadding mt-3">
         <img id="firstPallete" src="" alt="">
         <img id="secondPallete " src="" alt="">
         <img id="thirdPallete" src="" alt="">
       </div>
 
+<<<<<<< HEAD
       <!-- Comienza sección furniture -->
       <div class="container-fluid">
         <h1>Furniture</h1>
@@ -331,18 +534,89 @@
                   <p class="card-text" id="secondDescription">The description of the first tip</p>
                   <a href="#" class="btn btn-primary button">Learn More</a>
                 </div>
-              </div>
+||||||| merged common ancestors
+
+
+      <!-- Comienza sección furniture -->
+      <div class="container-fluid">
+        <h1>Furniture</h1>
+        <div id="furniturecontainer" class="">
+
+        </div>
+
+      </div>
+      <!--Tips-->
+      <div class="row nopadding mt-5 mb-5">
+        <div class="col nopadding mt-3">
+          <div class="blog-cont">
+            <h2 id="titleTips">The title tips</h2>
+            <div class="row nopadding mt-5 p-1">
               <div class="tips col">
-                <img class="card-img-top blog-img" id="thirdTipImg" src="" alt="Card image cap">
+                <img class="card-img-top blog-img" id="firstTipImg" src="" alt="Card image cap">
                 <div class="card-body">
-                  <h4 class="card-title" id="thirdTipTitle">The first tip title</h4>
-                  <p class="card-text" id="thirdTipDescription">The description of the first tip</p>
+                  <h4 class="card-title" id="firstTipTitle">The first tip title</h4>
+                  <p class="card-text" id="firstTipDescription">The description of the first tip</p>
                   <a href="#" class="btn btn-primary button">Learn More</a>
                 </div>
               </div>
+              <div class="tips col">
+                <img class="card-img-top blog-img" id="secondTipImg" src="" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title" id="secondTipTitle">The first tip title</h4>
+                  <p class="card-text" id="secondDescription">The description of the first tip</p>
+                  <a href="#" class="btn btn-primary button">Learn More</a>
+                </div>
+=======
+
+          <!-- Comienza sección furniture -->
+          <div class="container-fluid">
+              <h1>Furniture</h1>
+              <div id="furniturecontainer" class="">
+  
+>>>>>>> bbcf1fbf4f52dd39be1841795d0e1c4a370807b6
+              </div>
+  
             </div>
-            <button class="btn">Want to see more tips?</button>
+            <!--Tips-->
+            <div class="row nopadding mt-5 mb-5">
+              <div class="col nopadding mt-3">
+                <div class="blog-cont">
+                  <h2 id="titleTips" class="font-weight-bold text-uppercase">The title tips</h2>
+                  <div class="tips col card tips mb-3 nopadding" style="max-width: 18rem;">
+                      <img class="card-img-top blog-img" id="firstTipImg"src="assets/images/rug2b.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h6 class="text-uppercase font-italic">tips</h6>
+                        <h5 class="card-title font-weight-bold text-uppercase" id="firstTipTitle">Learn how to make your bedroom look bigger</h5>
+                        <p id="firstTipDescription"></p>
+                        <a class="fancy font-weight-bold" href="#">read more</a>
+                      </div>
+                    </div>
+                    <div class="tips col card tips mb-3 nopadding ml-5" style="max-width: 18rem;">
+                        <img class="card-img-top blog-img" id="secondTipImg" src="assets/images/lampara-3a.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h6 class="text-uppercase font-italic">tips</h6>
+                          <h5 class="card-title font-weight-bold text-uppercase" id="secondTipTitle">Learn how to choose lighting for a room</h5>
+                          <p id="secondDescription"></p>
+                          <a class="fancy font-weight-bold mt-2" href="#">read more</a>
+                        </div>
+                      </div>
+                      <div class="tips col card tips mb-3 nopadding ml-5" style="max-width: 18rem;">
+                          <img class="card-img-top blog-img" src="assets/images/square.jpg" id="thirdTipImg" alt="Card image cap">
+                          <div class="card-body">
+                            <h6 class="text-uppercase font-italic">tips</h6>
+                            <h5 class="card-title font-weight-bold text-uppercase" id="thirdTipTitle">Check out how to give personality to your office </h5>
+                            <p id="thirdTipDescription"></p>
+                            <a class="fancy font-weight-bold mt-2" href="#">read more</a>
+                          </div>
+                        </div>
+                  </div>
+                  <button class="btn">Want to see more tips?</button>
+                </div>
+              </div>
+            </div>
+            <!-- END tips -->
           </div>
+<<<<<<< HEAD
         </div>
       </div>
       <!-- Comienza sección furniture -->
@@ -388,12 +662,95 @@
           <h5 class="col-6 offset-3"> Subscribe to our newsletter!</h5>
           <div class="input-group mb-3 col-6 offset-3 mt-2">
             <input type="text" class="form-control" placeholder="Recipient's email" aria-label="Recipient's username" aria-describedby="basic-addon2">
-          </div>
+||||||| merged common ancestors
+        </div>
+      </div>  <!-- END tips -->
+    </div>
+    <!-- END TEMPLATE -->
+
+
+    <!-- Comienza productos especifico-->
+    <div class="container d-none" id="product">
+
+    </div>
+
+    <!-- Comienza footer -->
+    <footer class="container-fluid footer">
+      <div class="row">
+        <div class="col text-center mt-2">
+          <img id="logo2" src="assets/images/logo.png" alt="Logo" height="23">
         </div>
       </div>
-    </footer>
-    <!-- Termina Footer -->
-
+      <div class="row mt-2">
+        <div class="col ml-20">
+          <span class="font-weight-bold d-block text-left mb-1 fs ">LEARN MORE!</span>
+          <a href="#" class="d-block text-left mb-1  fs link">About us</a>
+          <a href="#" class="d-block text-left mb-1 fs link">Contact</a>
+          <a href="#" class="d-block text-left mb-1 fs link">FAQ</a>
+          <a href="#" class="d-block text-left mb-1 fs link">Visit our blog!</a>
+        </div>
+        <div class="col mr-30">
+          <span class="font-weight-bold d-block text-left mb-1 fs">KEEP IN TOUCH</span>
+          <a href="https://twitter.com/" class="d-block text-left mb-1 link">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+          <a href="https://www.facebook.com/" class="d-block text-left mb-1 link">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="https://www.instagram.com/" class="d-block text-left mb-1 link">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <div class="col mr-30">
+          <h5 class="col-6 offset-3"> Subscribe to our newsletter!</h5>
+          <div class="input-group mb-3 col-6 offset-3 mt-2">
+            <input type="text" class="form-control" placeholder="Recipient's email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+=======
+          <!-- END TEMPLATE -->
+  
+  
+          <!-- Comienza productos especifico-->
+          <div class="container d-none" id="product">
+  
+>>>>>>> bbcf1fbf4f52dd39be1841795d0e1c4a370807b6
+          </div>
+  
+          <!-- Comienza footer -->
+          <footer class="container-fluid footer">
+            <div class="row">
+              <div class="col text-center mt-2">
+                <img id="logo2" src="assets/images/logo.png" alt="Logo" height="23">
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col ml-20">
+                <span class="font-weight-bold d-block text-left mb-1 fs ">Learn more!</span>
+                <a href="#" class="d-block text-left mb-1  fs link">About us</a>
+                <a href="#" class="d-block text-left mb-1 fs link">Contact</a>
+                <a href="#" class="d-block text-left mb-1 fs link">FAQ</a>
+                <a href="#" class="d-block text-left mb-1 fs link">Visit our blog!</a>
+              </div>
+              <div class="col mr-30">
+                <span class="font-weight-bold d-block text-left mb-1 fs">Keep in touch</span>
+                <a href="https://twitter.com/" class="d-block text-left mb-1 link">
+                  <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="https://www.facebook.com/" class="d-block text-left mb-1 link">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.instagram.com/" class="d-block text-left mb-1 link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+              <div class="col mr-30">
+                <h5 class="col-6 offset-3"> Subscribe to our newsletter!</h5>
+                <div class="input-group mb-3 col-6 offset-3 mt-2">
+                  <input type="text" class="form-control" placeholder="Recipient's email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- Termina Footer -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
@@ -401,9 +758,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/data.js"></script>
     <script type="text/javascript" src="js/datafurniture.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/app2.js"></script>
     <script type="text/javascript" src="js/checkout.js"></script>
-    <script type="text/javascript" src="js/getproduct.js"></script>
+    <!-- <script type="text/javascript" src="js/checkout2.js"></script> -->
+    <script type="text/javascript" src="js/getproduct2.js"></script>
     <script type="text/javascript" src="js/home.js"></script>
   </body>
 

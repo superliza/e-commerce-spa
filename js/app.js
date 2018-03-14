@@ -8,13 +8,29 @@ let homePage = document.getElementById('homepage');
 let productPage = document.getElementById('product')
 //let firstCarrousel = document.getElementById('title');
 
+<<<<<<< HEAD
+
+||||||| merged common ancestors
+
+
+
+
+=======
+>>>>>>> bbcf1fbf4f52dd39be1841795d0e1c4a370807b6
 function getData(eventTrigger) {
   event.preventDefault();
   homePage.classList.add('d-none');
   container.classList.remove('d-none');
+<<<<<<< HEAD
+  let sectionSearch = eventTrigger.name;
+  console.log(sectionSearch);
+||||||| merged common ancestors
+  let sectionSearch = eventTrigger.id;
+=======
   console.log(eventTrigger);
   let sectionSearch = eventTrigger.getAttribute("name");
   console.log(sectionSearch);
+>>>>>>> bbcf1fbf4f52dd39be1841795d0e1c4a370807b6
   let section = dataFourniture[sectionSearch];
   let sectionTitle = section.title;
   console.log(sectionTitle);

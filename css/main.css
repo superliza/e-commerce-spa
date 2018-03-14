@@ -142,3 +142,8 @@ footer{
   color: #fb5200;
   text-decoration: none;
 }
+
+.footer-col{
+  text-align: center !important;
+  width: 10%;
+}

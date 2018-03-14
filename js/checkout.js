@@ -1,18 +1,33 @@
 let arrayProducts = [];
 function getCart(eventT) {
     // console.log(eventT.dataset);
-    let myId = new Date().getTime();
+    // let myId = new Date().getTime();
     
     let price = eventT.dataset.price;
     let name = eventT.dataset.name;
     let image = eventT.dataset.img;
-    let obj = {"name": name, "price": price, "imagen": image};
-    arrayProducts.push(myId, obj);
-    console.log(arrayProducts);
+    let obj = {
+        "name": name, 
+        "price": price, 
+        "imagen": image
+    };
+    // console.log(price);
+    
+    arrayProducts.push(obj);
+    // console.log(arrayProducts.indexOf(myId));
+    // let hola = arrayProducts.indexOf(myId);
+    // console.log(arrayProducts.splice(hola, 2));
+    addElements(arrayProducts);
+    // console.log(arrayProducts);
     
     // let theClick = eventT.classList.toggle("click");
     // console.log(hol);
-    addClass(eventT, arrayProducts);
+    addClass(eventT, arrayProducts, obj);
+    
+}
+
+function addElements(arrayProducts) {
+    // console.log(arrayProducts);
     
 }
 
@@ -21,19 +36,25 @@ function increaseCounter() {
     counter.innerHTML++;
 }
 
-function addClass(eventT, arrayProducts) {
+function addClass(eventT, arrayProducts, obj) {
     // console.log(arrayProducts);
     
-    let theClick = eventT.classList.toggle("click");
-    if (theClick === true) {
+    let theClick = eventT.classList.contains("click");
+    // console.log(theClick);
+    
+    if (theClick === false) {  
         eventT.innerHTML = "Quitar del carrito"
-        
+        eventT.classList.toggle("click");
         increaseCounter();
+        // removeFromCart(eventT, arrayProducts, myId);
     } else {
-        eventT.innerHTML = "Agregar al carrito"
-        removeFromCart(eventT, arrayProducts);
-        decreaseCounter();
+        // console.log(theClick);
         
+        eventT.innerHTML = "Agregar al carrito"
+        eventT.classList.toggle("click");
+        decreaseCounter();
+        removeFromCart(eventT, arrayProducts, obj);
+               
     }
 }
 
@@ -62,14 +83,15 @@ function decreaseCounter() {
 //     console.log(cartProducts);
 //   }
 // }
-function removeFromCart(eventT, arrayProducts) {
-    arrayProducts.forEach(element => {
-        let dataImage = element.imagen;
-        console.log(dataImage);
-        
-    })
+function removeFromCart(eventT, arrayProducts, obj) {
+    let buscandoIndex = arrayProducts.indexOf(obj);
+    let deleteCar = arrayProducts.splice(buscandoIndex, 1);
+    console.log(deleteCar);
+    return deleteCar;
+    // let hola = arrayProducts.splice(buscandoIndex, 2);
+    // // console.log(hola);
     
-    return arrayProducts;
+    // return hola;
     
 //     arrayProducts = arrayProducts.filter(function(element){
 //     return  element.id !== productId

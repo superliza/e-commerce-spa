@@ -92,8 +92,8 @@ var dataPictures = {
             '1': ["assets/images/cajon1a.jpg", "assets/images/cajon1b.jpg", "assets/images/cajon1c.jpg", "assets/images/cajon1d.jpg"],
         },
         'dresser': {
-            '1': ["assets/images/dresser6a.jpg", "assets/images/dresser6b.jpg", "assets/images/dresser6c.jpg"],
-            '2': ["assets/images/draw-dresser-a.jpg", "assets/images/draw-dresser-b.jpg", "assets/images/draw-dresser-c.jpg", "assets/images/draw-dresser-d.jpg"],
+            '1': ["assets/images/dresser1a.jpg", "assets/images/dresser2b.jpg", "assets/images/dresser3c.jpg"],
+            '2': ["assets/images/e-commerce/draw-dresser-2b.jpg", "assets/images/e-commerce/draw-dresser-2c.jpg", "assets/images/e-commerce/draw-dresser-2d.jpg", "assets/images/e-commerce/dres2a.jpg"],
         },
         'nightlamp': {
             '1': ["assets/images/lampara-1a.jpg", "assets/images/lampara-1b.jpg"],
@@ -111,7 +111,7 @@ var dataPictures = {
     },
     'studio': {
         'desk': {
-            '1': ["assets/images/desk1a.jpg", "assets/images/desk1b.jpg", "assets/images/desk1c.jpg"],
+            '1': ["assets/images/desk1.jpg", "assets/images/desk1b.jpg", "assets/images/desk1c.jpg"],
             '2': ["assets/images/desk2a.jpg", "assets/images/desk2b.jpg", "assets/images/desk2c.jpg"],
             '3': ["assets/images/desk3a.jpg", "assets/images/desk3b.jpg", "assets/images/desk3c.jpg"],
             '4': ["assets/images/desk4a.jpg", "assets/images/desk4b.jpg", "assets/images/desk4c.jpg"],
